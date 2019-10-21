@@ -6,82 +6,180 @@
 	Modified by Nicolas Luckie for personal use
 -->
 <html>
-	<head>
-		<title>Nicolas Luckie</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
 
-		<!-- Header -->
-			<section id="header">
-				<header>
-					<h1>Nicolas Luckie</h1>
-					<p>SYSTEMS ARCHITECT</p>
-				</header>
-				<footer>
-					<a href="#banner" class="button style2 scrolly-middle">ABOUT ME</a>
-				</footer>
-			</section>
+<head>
+	<title>Nicolas Luckie</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<noscript>
+		<link rel="stylesheet" href="assets/css/noscript.css" />
+	</noscript>
+	<style>
+		#bannerGreen {
+			color: #fff;
+			text-shadow: 0 0 0.5px rgba(255, 255, 255, 0.25);
+			text-align: center;
+			background: #0e9e55 url("assets/css/images/banner.svg") bottom center no-repeat;
+			background-size: 125% auto;
+			padding: 5em 0 5em 0;
+			width: 100%;
+		}
 
-		<!-- Banner -->
-			<section id="banner">
-				<header>
-					<h2>COMPUTER PROGRAMMER</h2>
-				</header>
-				<p>I am a computer programmer with a demonstrated history in<br> both software and full stack development.</p>
-				<!--<p>A brand new site template designed by <a href="http://twitter.com/ajlkn">AJ</a> for <a href="http://html5up.net">HTML5 UP</a>.<br />
-				It’s responsive, built on HTML5/CSS3, and entirely free<br />
-				under the <a href="http://html5up.net/license">Creative Commons license</a>.</p>-->
-				<footer>
-					<a href="#first" class="button style2 scrolly">SKILL-SET</a>
-				</footer>
-			</section>
+		#bannerGreen .button {
+			color: #0e9e55;
+			text-shadow: 0 0 0.5px rgba(53, 184, 130, 0.25);
+		}
 
-		<!-- Feature 1 -->
-			<article id="first" class="container box style1 right">
-				<a href="#" class="image fit"><img src="images/pic01_alt.jpg" alt="" /></a>
-				<div class="inner">
-					<header>
-						<h2>SYSTEMS<br />
-							ADMINISTRATION</h2>
-					</header>
-					<p>I have developed systems for Windows and Linux-based operating systems. I am familiar with their architecture and utilize them on a daily basis.</p>
-				</div>
-			</article>
+		#bannerGreen header {
+			margin: 0 0 2em 0;
+		}
 
-		<!-- Feature 2 -->
-			<article class="container box style1 left">
-				<a href="#" class="image fit"><img src="images/pic02_alt.jpg" alt="" /></a>
-				<div class="inner">
-					<header>
-						<h2>SOFTWARE &amp; WEB<br />
-						DEVELOPMENT</h2>
-					</header>
-					<p>Proficient in C# and Java for native application development. I'm familiar with a variety of languages and architectures, equipping me for any kind of web development project.</p>
-				</div>
-			</article>
+		#bannerGreen header h2 {
+			font-weight: 400;
+			font-size: 1.75em;
+			letter-spacing: 8px;
+		}
 
-		<!-- Feature 2 -->
-			<article class="container box style1 right">
-				<a href="#" class="image fit"><img src="images/pic03.jpg" alt="" /></a>
-				<div class="inner">
-					<header>
-						<h2>IT SECURITY</h2>
-					</header>
-					<p>I only use the latest, up-to-date security practices when developing my systems. There are no shortcuts when it comes to the protection of data integrity.</p>
-				</div>
-			</article>
+		#bannerGreen p {
+			margin: 0;
+		}
 
-		<!-- Portfolio -->
-			<article class="container box style2">
-				<header>
-					<h2>PROJECTS</h2>
-					<p><i>Coming soon</i></p>
-				</header>
-				<!--<div class="inner gallery">
+		#bannerGreen footer {
+			margin: 2em 0 0 0;
+		}
+
+		#bannerGreen a {
+			color: inherit;
+			border-bottom-color: rgba(255, 255, 255, 0.5);
+		}
+
+		#bannerGreen a:hover {
+			border-bottom-color: rgba(255, 255, 255, 0);
+		}
+
+		@media screen and (max-width: 736px) {
+			#bannerGreen {
+				padding: 3em 2em 3em 2em;
+				background-size: auto 150%;
+			}
+
+			#bannerGreen header {
+				margin: 0 0 1em 0;
+			}
+
+			#bannerGreen header h2 {
+				font-size: 1.5em;
+				letter-spacing: 6px;
+			}
+		}
+
+		.avatar {
+			display: block;
+			margin-bottom: 1.25em;
+		}
+
+		.avatar img {
+			display: block;
+			margin: 0 auto;
+			border-radius: 100%;
+			box-shadow: 0 0 0 0.25em #ffffff;
+			width: 9em;
+		}
+
+		a {
+			color: #b83535;
+			border-bottom: dotted 1px #b83535;
+		}
+	</style>
+</head>
+
+<body class="is-preload">
+
+	<!-- Header -->
+	<section id="header">
+		<header>
+			<div class="avatar">
+				<img src="images/nic.JPG" alt="">
+			</div>
+			<h1>Nicolas Luckie</h1>
+			<p></p>
+		</header>
+		<footer>
+			<a href="#banner" class="button style2 scrolly-middle">ABOUT ME</a>
+		</footer>
+	</section>
+
+	<!-- Banner -->
+	<section id="banner">
+		<header>
+			<h2>COMPUTER PROGRAMMER</h2>
+		</header>
+		<p>Graduated Sheridan College in 2017 with a diploma in Computer Programming.</p>
+		<footer>
+			<a href="#bannerGreen" class="button style2 scrolly">MORE</a>
+		</footer>
+	</section>
+
+	<!-- Feature 1 -->
+	<article id="bannerGreen" class="container box style1">
+		<header>
+			<h2>INVESTIGATIONS STUDENT</h2>
+		</header>
+		<p>Studying Protection, Security, and Investigations at Durham College (2019-2020).</p>
+		<footer>
+			<a href="#first" class="button style2 scrolly">SKILL-SET</a>
+		</footer>
+	</article>
+
+	<!-- Feature 1 -->
+	<article id="first" class="container box style1 right">
+		<a href="#" class="image fit"><img src="images/pic01_alt.jpg" alt="" /></a>
+		<div class="inner">
+			<header>
+				<h2>SYSTEMS<br />
+					ADMINISTRATION</h2>
+			</header>
+			<p>I have developed systems for Windows and Linux-based operating systems. I am familiar with their
+				architecture, and have experience working with relational database management systems like MySQL to
+				configure, backup, monitor, and perform emergency rollbacks.</p>
+		</div>
+	</article>
+
+	<!-- Feature 2 -->
+	<article class="container box style1 left">
+		<a href="#" class="image fit"><img src="images/pic02_alt.jpg" alt="" /></a>
+		<div class="inner">
+			<header>
+				<h2>SOFTWARE &amp; WEB<br />
+					DEVELOPMENT</h2>
+			</header>
+			<p>Proficient in C# and Java for native desktop application development, and various languages for web-based
+				projects like Python, PHP, and MySQL. Currently, I work on IoT solutions focused on the use of Raspberry
+				Pis with Linux-based web servers for practical home automation.</p>
+		</div>
+	</article>
+
+	<!-- Feature 2 -->
+	<article class="container box style1 right">
+		<a href="#" class="image fit"><img src="images/pic03.jpg" alt="" /></a>
+		<div class="inner">
+			<header>
+				<h2>INFORMATION SECURITY</h2>
+			</header>
+			<p>Growing interest in open source intelligence (OSINT) presents a real threat to data integrity. Keeping
+				that in mind, I use a security-centric mindset to identify and prevent potential security
+				vulnerabilities that may arise both during, and after the course of development.</p>
+		</div>
+	</article>
+
+	<!-- Portfolio -->
+	<!--<article class="container box style2">
+		<header>
+			<h2>PROJECTS</h2>
+			<p><i>Coming soon</i></p>
+		</header>
+		<!-<div class="inner gallery">
 					<div class="row gtr-0">
 						<div class="col-3 col-12-mobile"><a href="images/fulls/01.jpg" class="image fit"><img src="images/thumbs/01.jpg" alt="" title="Ad infinitum" /></a></div>
 						<div class="col-3 col-12-mobile"><a href="images/fulls/02.jpg" class="image fit"><img src="images/thumbs/02.jpg" alt="" title="Dressed in Clarity" /></a></div>
@@ -94,16 +192,16 @@
 						<div class="col-3 col-12-mobile"><a href="images/fulls/07.jpg" class="image fit"><img src="images/thumbs/07.jpg" alt="" title="History was made here" /></a></div>
 						<div class="col-3 col-12-mobile"><a href="images/fulls/08.jpg" class="image fit"><img src="images/thumbs/08.jpg" alt="" title="People come and go and walk away" /></a></div>
 					</div>
-				</div>-->
-			</article>
+				</div>
+	</article>-->
 
-		<!-- Contact -->
-			<article class="container box style3">
-				<header>
-					<h2>CONTACT</h2>
-					<p><a href="mailto:nicolas_luckie@hotmail.com">nicolas_luckie@hotmail.com</a></p>
-				</header>
-				<!--<form method="post" action="#">
+	<!-- Contact -->
+	<article class="container box style3">
+		<header>
+			<h2>CONTACT</h2>
+			<p><a href="mailto:nicolas_luckie@hotmail.com">nicolas_luckie@hotmail.com</a></p>
+		</header>
+		<!--<form method="post" action="#">
 					<div class="row gtr-50">
 						<div class="col-6 col-12-mobile"><input type="text" class="text" name="name" placeholder="Name" /></div>
 						<div class="col-6 col-12-mobile"><input type="text" class="text" name="email" placeholder="Email" /></div>
@@ -117,29 +215,33 @@
 						</div>
 					</div>
 				</form>-->
-			</article>
+	</article>
 
-		<section id="footer">
-			<ul class="icons">
-				<li><a target="_BLANK" href="https://www.facebook.com/nicolasluckie" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-				<li><a target="_BLANK" href="https://github.com/nicolasluckie" class="icon fa-github"><span class="label">GitHub</span></a></li>
-				<li><a target="_BLANK" href="https://www.linkedin.com/in/nicolasluckie" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
+	<section id="footer">
+		<ul class="icons">
+			<li><a target="_BLANK" href="https://www.facebook.com/nicolasluckie" class="icon fa-facebook"><span
+						class="label">Facebook</span></a></li>
+			<li><a target="_BLANK" href="https://github.com/nicolasluckie" class="icon fa-github"><span
+						class="label">GitHub</span></a></li>
+			<li><a target="_BLANK" href="https://www.linkedin.com/in/nicolasluckie" class="icon fa-linkedin"><span
+						class="label">LinkedIn</span></a></li>
+		</ul>
+		<div class="copyright">
+			<ul class="menu">
+				<li>&copy; Nicolas Luckie. All rights reserved.</li>
 			</ul>
-			<div class="copyright">
-				<ul class="menu">
-					<li>&copy; Nicolas Luckie. All rights reserved.</li>
-				</ul>
-			</div>
-		</section>
+		</div>
+	</section>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/jquery.poptrox.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.scrolly.min.js"></script>
+	<script src="assets/js/jquery.poptrox.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
 
-	</body>
+</body>
+
 </html>
