@@ -1,4 +1,4 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <!--
 	Overflow by HTML5 UP
 	html5up.net | @ajlkn
@@ -6,177 +6,287 @@
 	Modified by Nicolas Luckie for personal use
 -->
 <html>
+  <head>
+    <title>Nicolas Luckie</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=no"
+    />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript>
+      <link rel="stylesheet" href="assets/css/noscript.css" />
+    </noscript>
+    <style>
+      #bannerGreen {
+        color: #fff;
+        text-shadow: 0 0 0.5px rgba(255, 255, 255, 0.25);
+        text-align: center;
+        background: #0e9e55 url("assets/css/images/banner.svg") bottom center
+          no-repeat;
+        background-size: 125% auto;
+        padding: 5em 0 5em 0;
+        width: 100%;
+      }
 
-<head>
-	<title>Nicolas Luckie</title>
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-	<link rel="stylesheet" href="assets/css/main.css" />
-	<noscript>
-		<link rel="stylesheet" href="assets/css/noscript.css" />
-	</noscript>
-	<style>
-		#bannerGreen {
-			color: #fff;
-			text-shadow: 0 0 0.5px rgba(255, 255, 255, 0.25);
-			text-align: center;
-			background: #0e9e55 url("assets/css/images/banner.svg") bottom center no-repeat;
-			background-size: 125% auto;
-			padding: 5em 0 5em 0;
-			width: 100%;
-		}
+      #bannerGreen .button {
+        color: #0e9e55;
+        text-shadow: 0 0 0.5px rgba(53, 184, 130, 0.25);
+      }
 
-		#bannerGreen .button {
-			color: #0e9e55;
-			text-shadow: 0 0 0.5px rgba(53, 184, 130, 0.25);
-		}
+      #bannerGreen header {
+        margin: 0 0 2em 0;
+      }
 
-		#bannerGreen header {
-			margin: 0 0 2em 0;
-		}
+      #bannerGreen header h2 {
+        font-weight: 400;
+        font-size: 1.75em;
+        letter-spacing: 8px;
+      }
 
-		#bannerGreen header h2 {
-			font-weight: 400;
-			font-size: 1.75em;
-			letter-spacing: 8px;
-		}
+      #bannerGreen p {
+        margin: 0;
+      }
 
-		#bannerGreen p {
-			margin: 0;
-		}
+      #bannerGreen footer {
+        margin: 2em 0 0 0;
+      }
 
-		#bannerGreen footer {
-			margin: 2em 0 0 0;
-		}
+      #bannerGreen a {
+        color: inherit;
+        border-bottom-color: rgba(255, 255, 255, 0.5);
+      }
 
-		#bannerGreen a {
-			color: inherit;
-			border-bottom-color: rgba(255, 255, 255, 0.5);
-		}
+      #bannerGreen a:hover {
+        border-bottom-color: rgba(255, 255, 255, 0);
+      }
 
-		#bannerGreen a:hover {
-			border-bottom-color: rgba(255, 255, 255, 0);
-		}
+      @media screen and (max-width: 736px) {
+        #bannerGreen {
+          padding: 3em 2em 3em 2em;
+          background-size: auto 150%;
+        }
 
-		@media screen and (max-width: 736px) {
-			#bannerGreen {
-				padding: 3em 2em 3em 2em;
-				background-size: auto 150%;
-			}
+        #bannerGreen header {
+          margin: 0 0 1em 0;
+        }
 
-			#bannerGreen header {
-				margin: 0 0 1em 0;
-			}
+        #bannerGreen header h2 {
+          font-size: 1.5em;
+          letter-spacing: 6px;
+        }
+      }
 
-			#bannerGreen header h2 {
-				font-size: 1.5em;
-				letter-spacing: 6px;
-			}
-		}
+      #bannerBlue {
+        color: #fff;
+        text-shadow: 0 0 0.5px rgba(255, 255, 255, 0.25);
+        text-align: center;
+        background: #000033 url("assets/css/images/banner.svg") bottom center
+          no-repeat;
+        background-size: 125% auto;
+        padding: 5em 0 5em 0;
+        width: 100%;
+      }
 
-		.avatar {
-			display: block;
-			margin-bottom: 1.25em;
-		}
+      #bannerBlue .button {
+        color: #000033;
+        text-shadow: 0 0 0.5px rgba(53, 184, 130, 0.25);
+      }
 
-		.avatar img {
-			display: block;
-			margin: 0 auto;
-			border-radius: 100%;
-			box-shadow: 0 0 0 0.25em #ffffff;
-			width: 9em;
-		}
+      #bannerBlue header {
+        margin: 0 0 2em 0;
+      }
 
-		a {
-			color: #b83535;
-			border-bottom: dotted 1px #b83535;
-		}
-	</style>
-</head>
+      #bannerBlue header h2 {
+        font-weight: 400;
+        font-size: 1.75em;
+        letter-spacing: 8px;
+      }
 
-<body class="is-preload">
+      #bannerBlue p {
+        margin: 0;
+      }
 
-	<!-- Header -->
-	<section id="header">
-		<header>
-			<div class="avatar">
-				<img src="images/nic.JPG" alt="">
-			</div>
-			<h1>Nicolas Luckie</h1>
-			<p></p>
-		</header>
-		<footer>
-			<a href="#banner" class="button style2 scrolly-middle">ABOUT ME</a>
-		</footer>
-	</section>
+      #bannerBlue footer {
+        margin: 2em 0 0 0;
+      }
 
-	<!-- Banner -->
-	<section id="banner">
-		<header>
-			<h2>COMPUTER PROGRAMMER</h2>
-		</header>
-		<p>Sheridan College - Class of 2017</p>
-		<p><strong>Completed courses include:</strong> Windows/Linux Operating Systems, Web Programming, Object Oriented Programming, and Relational Database Management System Application Development.</p>
-		<footer>
-			<a href="#bannerGreen" class="button style2 scrolly">MORE</a>
-		</footer>
-	</section>
+      #bannerBlue a {
+        color: inherit;
+        border-bottom-color: rgba(255, 255, 255, 0.5);
+      }
 
-	<!-- Feature 1 -->
-	<article id="bannerGreen" class="container box style1">
-		<header>
-			<h2>PROTECTION, SECURITY, AND INVESTIGATIONS</h2>
-		</header>
-		<p>Durham College - Class of 2020</p>
-		<p><strong>Completed courses include:</strong> Forensic Psychology, Courtroom Procedures, Terrorism Investigations, Criminal Code & Civil Law, and Provincial Offences.</p>
-		<footer>
-			<a href="#first" class="button style2 scrolly">SKILL-SET</a>
-		</footer>
-	</article>
+      #bannerBlue a:hover {
+        border-bottom-color: rgba(255, 255, 255, 0);
+      }
 
-	<!-- Feature 1 -->
-	<article id="first" class="container box style1 right">
-		<a href="#feature2" class="image fit scrolly"><img src="images/pic01_alt.jpg" alt="" /></a>
-		<div class="inner">
-			<header>
-				<h2>SYSTEMS<br />
-					ADMINISTRATION</h2>
-			</header>
-			<p>I have developed systems for Windows and Linux-based operating systems. I am familiar with their
-				architecture, and have experience working with relational database management systems like MySQL to
-				configure, backup, monitor, and perform emergency rollbacks.</p>
-		</div>
-	</article>
+      @media screen and (max-width: 736px) {
+        #bannerBlue {
+          padding: 3em 2em 3em 2em;
+          background-size: auto 150%;
+        }
 
-	<!-- Feature 2 -->
-	<article class="container box style1 left" id="feature2">
-		<a href="#feature3" class="image fit scrolly"><img src="images/pic02_alt.jpg" alt="" /></a>
-		<div class="inner">
-			<header>
-				<h2>SOFTWARE &amp; WEB<br />
-					DEVELOPMENT</h2>
-			</header>
-			<p>Proficient in C# and Java for native desktop application development, and various languages for web-based
-				projects like Python, PHP, and MySQL. Currently, I work on IoT solutions focused on the use of Raspberry
-				Pis with Linux-based web servers for practical home automation.</p>
-		</div>
-	</article>
+        #bannerBlue header {
+          margin: 0 0 1em 0;
+        }
 
-	<!-- Feature 2 -->
-	<article class="container box style1 right" id="feature3">
-		<a href="#contact" class="image fit scrolly"><img src="images/pic03.jpg" alt="" /></a>
-		<div class="inner">
-			<header>
-				<h2>INFORMATION SECURITY</h2>
-			</header>
-			<p>Growing interest in open source intelligence (OSINT) presents a real threat to data integrity. Keeping
-				that in mind, I use a security-centric mindset to identify and prevent potential security
-				vulnerabilities that may arise before, during, and post development.</p>
-		</div>
-	</article>
+        #bannerBlue header h2 {
+          font-size: 1.5em;
+          letter-spacing: 6px;
+        }
+      }
 
-	<!-- Portfolio -->
-	<!--<article class="container box style2">
+      .avatar {
+        display: block;
+        margin-bottom: 1.25em;
+      }
+
+      .avatar img {
+        display: block;
+        margin: 0 auto;
+        border-radius: 100%;
+        box-shadow: 0 0 0 0.25em #ffffff;
+        width: 9em;
+      }
+
+      a {
+        color: #b83535;
+        border-bottom: dotted 1px #b83535;
+      }
+    </style>
+  </head>
+
+  <body class="is-preload">
+    <!-- Header -->
+    <section id="header">
+      <header>
+        <div class="avatar">
+          <img src="images/pic.png" alt="" />
+        </div>
+        <h1>Nicolas Luckie</h1>
+        <p></p>
+      </header>
+      <footer>
+        <a href="#banner" class="button style2 scrolly-middle">ABOUT ME</a>
+      </footer>
+    </section>
+
+    <!-- Banner -->
+    <section id="banner">
+      <header>
+        <h2>COMPUTER PROGRAMMER</h2>
+      </header>
+      <p><b>Sheridan College - 2017</b></p>
+      <p>
+        <i>Completed courses:</i> Windows/Linux Operating Systems, Web
+        Programming, Object Oriented Programming, and Relational Database
+        Management System Application Development.
+      </p>
+      <footer>
+        <a href="#bannerGreen" class="button style2 scrolly">MORE</a>
+      </footer>
+    </section>
+
+    <!-- Feature 1 -->
+    <article id="bannerGreen" class="container box style1">
+      <header>
+        <h2>PROTECTION, SECURITY, AND INVESTIGATIONS</h2>
+      </header>
+      <p><b>Durham College - 2020</b></p>
+      <p>
+        <i>Completed courses:</i> Forensic Psychology, Courtroom Procedures,
+        Terrorism Investigations, Criminal Code & Civil Law, and Provincial
+        Offences.
+      </p>
+      <footer>
+        <a href="#bannerBlue" class="button style2 scrolly">MORE</a>
+      </footer>
+    </article>
+
+    <!-- Feature 1 -->
+    <article id="bannerBlue" class="container box style1">
+      <header>
+        <h2>CYBER CRIME SPECIALIST</h2>
+      </header>
+      <p>Humber College - 2022</p>
+      <p></p>
+      <footer>
+        <a href="#contact" class="button style2 scrolly">CONTACT</a>
+      </footer>
+    </article>
+
+    <!-- SYSTEMS ADMINISTRATION -->
+    <!--
+    <article id="first" class="container box style1 right">
+      <a href="#feature2" class="image fit scrolly"
+        ><img src="images/pic01_alt.jpg" alt=""
+      /></a>
+      <div class="inner">
+        <header>
+          <h2>
+            SYSTEMS<br />
+            ADMINISTRATION
+          </h2>
+        </header>
+        <p>
+          I have developed systems for Windows and Linux-based operating
+          systems. I am familiar with their architecture, and have experience
+          working with relational database management systems like MySQL to
+          configure, backup, monitor, and perform emergency rollbacks.
+        </p>
+      </div>
+    </article>
+  -->
+    <!-- ./SYSTEMS ADMINISTRATION -->
+
+    <!-- SOFTWARE DEVELOPER -->
+    <!--
+    <article class="container box style1 left" id="feature2">
+      <a href="#feature3" class="image fit scrolly"
+        ><img src="images/pic02_alt.jpg" alt=""
+      /></a>
+      <div class="inner">
+        <header>
+          <h2>
+            SOFTWARE &amp; WEB<br />
+            DEVELOPMENT
+          </h2>
+        </header>
+        <p>
+          Proficient in C# and Java for native desktop application development,
+          and various languages for web-based projects like Python, PHP, and
+          MySQL. Currently, I work on IoT solutions focused on the use of
+          Raspberry Pis with Linux-based web servers for practical home
+          automation.
+        </p>
+      </div>
+    </article>
+    -->
+    <!-- ./SOFTWARE DEVELOPER -->
+
+    <!-- INFORMATION SECURITY -->
+    <!--
+    <article class="container box style1 right" id="feature3">
+      <a href="#contact" class="image fit scrolly"
+        ><img src="images/pic03.jpg" alt=""
+      /></a>
+      <div class="inner">
+        <header>
+          <h2>INFORMATION SECURITY</h2>
+        </header>
+        <p>
+          Growing interest in open source intelligence (OSINT) presents a real
+          threat to data integrity. Keeping that in mind, I use a
+          security-centric mindset to identify and prevent potential security
+          vulnerabilities that may arise before, during, and post development.
+        </p>
+      </div>
+    </article>
+    -->
+    <!-- ./INFORMATION SECURITY -->
+
+    <!-- Portfolio -->
+    <!--<article class="container box style2">
 		<header>
 			<h2>PROJECTS</h2>
 			<p><i>Coming soon</i></p>
@@ -197,13 +307,15 @@
 				</div>
 	</article>-->
 
-	<!-- Contact -->
-	<article class="container box style3" id="contact">
-		<header>
-			<h2>CONTACT</h2>
-			<p><a href="mailto:nicolas.luckie@outlook.com">nicolas.luckie@outlook.com</a></p>
-		</header>
-		<!--<form method="post" action="#">
+    <!-- Contact -->
+    <article class="container box style3" id="contact">
+      <header>
+        <h2>CONTACT</h2>
+        <p>
+          <a href="mailto:nicolasluckie@gmail.com">nicolasluckie@gmail.com</a>
+        </p>
+      </header>
+      <!--<form method="post" action="#">
 					<div class="row gtr-50">
 						<div class="col-6 col-12-mobile"><input type="text" class="text" name="name" placeholder="Name" /></div>
 						<div class="col-6 col-12-mobile"><input type="text" class="text" name="email" placeholder="Email" /></div>
@@ -217,33 +329,49 @@
 						</div>
 					</div>
 				</form>-->
-	</article>
+    </article>
 
-	<section id="footer">
-		<ul class="icons">
-			<li><a target="_BLANK" href="https://www.facebook.com/nicolasluckie" class="icon fa-facebook"><span
-						class="label">Facebook</span></a></li>
-			<li><a target="_BLANK" href="https://github.com/nicolasluckie" class="icon fa-github"><span
-						class="label">GitHub</span></a></li>
-			<li><a target="_BLANK" href="https://www.linkedin.com/in/nicolasluckie" class="icon fa-linkedin"><span
-						class="label">LinkedIn</span></a></li>
-		</ul>
-		<div class="copyright">
-			<ul class="menu">
-				<li>&copy; Nicolas Luckie. All rights reserved.</li>
-			</ul>
-		</div>
-	</section>
+    <section id="footer">
+      <ul class="icons">
+        <li>
+          <a
+            target="_BLANK"
+            href="https://www.facebook.com/nicolasluckie"
+            class="icon fa-facebook"
+            ><span class="label">Facebook</span></a
+          >
+        </li>
+        <li>
+          <a
+            target="_BLANK"
+            href="https://github.com/nicolasluckie"
+            class="icon fa-github"
+            ><span class="label">GitHub</span></a
+          >
+        </li>
+        <li>
+          <a
+            target="_BLANK"
+            href="https://www.linkedin.com/in/nicolasluckie"
+            class="icon fa-linkedin"
+            ><span class="label">LinkedIn</span></a
+          >
+        </li>
+      </ul>
+      <div class="copyright">
+        <ul class="menu">
+          <li><i>Thanks for visiting!</i></li>
+        </ul>
+      </div>
+    </section>
 
-	<!-- Scripts -->
-	<script src="assets/js/jquery.min.js"></script>
-	<script src="assets/js/jquery.scrolly.min.js"></script>
-	<script src="assets/js/jquery.poptrox.min.js"></script>
-	<script src="assets/js/browser.min.js"></script>
-	<script src="assets/js/breakpoints.min.js"></script>
-	<script src="assets/js/util.js"></script>
-	<script src="assets/js/main.js"></script>
-
-</body>
-
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/jquery.poptrox.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
 </html>
