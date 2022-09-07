@@ -1,377 +1,551 @@
 <!DOCTYPE html>
-<!--
-	Overflow by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-	Modified by Nicolas Luckie for personal use
--->
-<html>
+<html lang="en">
   <head>
+    <!-- Basic Page Needs
+    ================================================== -->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
     <title>Nicolas Luckie</title>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, user-scalable=no"
+
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <meta name="keywords" content="" />
+
+    <!-- Mobile Specific Metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+
+    <!-- Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Varela"
+      rel="stylesheet"
     />
-    <link rel="stylesheet" href="assets/css/main.css" />
-    <noscript>
-      <link rel="stylesheet" href="assets/css/noscript.css" />
-    </noscript>
-    <style>
-      #bannerGreen {
-        color: #fff;
-        text-shadow: 0 0 0.5px rgba(255, 255, 255, 0.25);
-        text-align: center;
-        background: #0e9e55 url("assets/css/images/banner.svg") bottom center
-          no-repeat;
-        background-size: 125% auto;
-        padding: 5em 0 5em 0;
-        width: 100%;
-      }
 
-      #bannerGreen .button {
-        color: #0e9e55;
-        text-shadow: 0 0 0.5px rgba(53, 184, 130, 0.25);
-      }
+    <!-- Favicon
+    ================================================== -->
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="assets/img/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/img/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/img/favicon-16x16.png"
+    />
+    <link rel="icon" sizes="16x16" href="assets/img/favicon.ico" />
+    <link rel="manifest" href="assets/img/manifest.json" />
+    <link
+      rel="mask-icon"
+      href="assets/img/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <meta name="theme-color" content="#ffffff" />
 
-      #bannerGreen header {
-        margin: 0 0 2em 0;
-      }
+    <!-- Stylesheets
+    ================================================== -->
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
 
-      #bannerGreen header h2 {
-        font-weight: 400;
-        font-size: 1.75em;
-        letter-spacing: 8px;
-      }
+    <!-- Font Awesome core CSS -->
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css" />
 
-      #bannerGreen p {
-        margin: 0;
-      }
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css" />
 
-      #bannerGreen footer {
-        margin: 2em 0 0 0;
-      }
-
-      #bannerGreen a {
-        color: inherit;
-        border-bottom-color: rgba(255, 255, 255, 0.5);
-      }
-
-      #bannerGreen a:hover {
-        border-bottom-color: rgba(255, 255, 255, 0);
-      }
-
-      @media screen and (max-width: 736px) {
-        #bannerGreen {
-          padding: 3em 2em 3em 2em;
-          background-size: auto 150%;
-        }
-
-        #bannerGreen header {
-          margin: 0 0 1em 0;
-        }
-
-        #bannerGreen header h2 {
-          font-size: 1.5em;
-          letter-spacing: 6px;
-        }
-      }
-
-      #bannerBlue {
-        color: #fff;
-        text-shadow: 0 0 0.5px rgba(255, 255, 255, 0.25);
-        text-align: center;
-        background: #000033 url("assets/css/images/banner.svg") bottom center
-          no-repeat;
-        background-size: 125% auto;
-        padding: 5em 0 5em 0;
-        width: 100%;
-      }
-
-      #bannerBlue .button {
-        color: #000033;
-        text-shadow: 0 0 0.5px rgba(53, 184, 130, 0.25);
-      }
-
-      #bannerBlue header {
-        margin: 0 0 2em 0;
-      }
-
-      #bannerBlue header h2 {
-        font-weight: 400;
-        font-size: 1.75em;
-        letter-spacing: 8px;
-      }
-
-      #bannerBlue p {
-        margin: 0;
-      }
-
-      #bannerBlue footer {
-        margin: 2em 0 0 0;
-      }
-
-      #bannerBlue a {
-        color: inherit;
-        border-bottom-color: rgba(255, 255, 255, 0.5);
-      }
-
-      #bannerBlue a:hover {
-        border-bottom-color: rgba(255, 255, 255, 0);
-      }
-
-      @media screen and (max-width: 736px) {
-        #bannerBlue {
-          padding: 3em 2em 3em 2em;
-          background-size: auto 150%;
-        }
-
-        #bannerBlue header {
-          margin: 0 0 1em 0;
-        }
-
-        #bannerBlue header h2 {
-          font-size: 1.5em;
-          letter-spacing: 6px;
-        }
-      }
-
-      .avatar {
-        display: block;
-        margin-bottom: 1.25em;
-      }
-
-      .avatar img {
-        display: block;
-        margin: 0 auto;
-        border-radius: 100%;
-        box-shadow: 0 0 0 0.25em #ffffff;
-        width: 9em;
-      }
-
-      a {
-        color: #b83535;
-        border-bottom: dotted 1px #b83535;
-      }
-    </style>
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
   </head>
+  <body>
+    <!-- Hero Section, Background Image change in css -->
+    <div id="top" class="hero background-overlay">
+      <!-- Name & Description -->
+      <div class="hero-content">
+        <h1>Nic Luckie<span class="blink">_</span></h1>
+        <p class="hero-job"><span>CYBER SECURITY SPECIALIST</span></p>
+        <!--<p class="hero-job-desc">FOR HIRE</p>-->
+      </div>
+      <!-- /.hero-content -->
 
-  <body class="is-preload">
+      <div class="hero-arrow page-scroll home-arrow-down">
+        <a class="" href="#quote"
+          ><i class="fa fa-angle-double-down" aria-hidden="true"></i
+        ></a>
+      </div>
+      <!-- /.hero-arrow -->
+    </div>
+    <!-- /.hero -->
+    <!-- End Hero -->
+
     <!-- Header -->
-    <section id="header">
-      <header>
-        <div class="avatar">
-          <img src="images/pic.png" alt="" />
+    <header id="masthead" class="site-header">
+      <nav id="primary-navigation" class="site-navigation" data-spy="affix">
+        <div class="container">
+          <div class="navbar-header page-scroll">
+            <button
+              type="button"
+              class="navbar-toggle collapsed"
+              data-toggle="collapse"
+              data-target="#portfolio-perfect-collapse"
+              aria-expanded="false"
+            >
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+
+            <!-- Name -->
+            <div class="page-scroll site-logo">
+              <a href="#top">Nic</a>
+            </div>
+          </div>
+          <!-- /.navbar-header -->
+
+          <div
+            class="main-menu collapse navbar-collapse"
+            id="portfolio-perfect-collapse"
+          >
+            <!-- Navigation -->
+            <ul class="nav navbar-nav navbar-right">
+              <li class="page-scroll"><a href="#top">Home</a></li>
+              <!--<li class="page-scroll"><a href="#intro">Intro</a></li>-->
+              <li class="page-scroll"><a href="#about">Skills</a></li>
+              <!--<li class="page-scroll"><a href="#services">Services</a></li>-->
+              <!--<li class="page-scroll"><a href="#team">Team</a></li>-->
+              <li class="page-scroll"><a href="#history">Education</a></li>
+              <!--<li class="page-scroll"><a href="#works">Works</a></li>-->
+              <li class="page-scroll"><a href="#contact">Contact</a></li>
+            </ul>
+            <!-- /.navbar-nav -->
+          </div>
+          <!-- /.navbar-collapse -->
         </div>
-        <h1>Nicolas Luckie</h1>
-        <p></p>
-      </header>
-      <footer>
-        <a href="#banner" class="button style2 scrolly-middle">ABOUT ME</a>
-      </footer>
-    </section>
+      </nav>
+      <!-- /.primary-navigation -->
+    </header>
+    <!-- /#header -->
+    <!-- End Header -->
 
-    <!-- Banner -->
-    <section id="banner">
-      <header>
-        <h2>COMPUTER PROGRAMMER</h2>
-      </header>
-      <p><b>Sheridan College - 2017</b></p>
-      <p>
-        <i>Completed courses:</i> Windows/Linux Operating Systems, Web
-        Programming, Object Oriented Programming, and Relational Database
-        Management System Application Development.
-      </p>
-      <footer>
-        <a href="#bannerGreen" class="button style2 scrolly">MORE</a>
-      </footer>
-    </section>
+    <!-- Main content -->
+    <main id="main" class="site-main">
+      <!-- Quote section -->
+      <section
+        class="section-background section-quote background-overlay text-center" id="quote">
+        <div class="container">
+          <p>
+            <span>Creative</span> problem solver with experience
+            <span>designing</span>, <span>implementing</span> and
+            <span>improving</span> processes through
+            <span>software</span> driven solutions.
+          </p>
+        </div>
+      </section>
+      <!-- /.section-quote -->
+      <!-- End Quote section -->
 
-    <!-- Feature 1 -->
-    <article id="bannerGreen" class="container box style1">
-      <header>
-        <h2>PROTECTION, SECURITY, AND INVESTIGATIONS</h2>
-      </header>
-      <p><b>Durham College - 2020</b></p>
-      <p>
-        <i>Completed courses:</i> Forensic Psychology, Courtroom Procedures,
-        Terrorism Investigations, Criminal Code & Civil Law, and Provincial
-        Offences.
-      </p>
-      <footer>
-        <a href="#bannerBlue" class="button style2 scrolly">MORE</a>
-      </footer>
-    </article>
+      <!-- About section -->
+      <section class="site-section section-about text-center" id="about">
+        <div class="container">
+          <h2>SKILLS</h2>
+          <p class="section-subtitle">
+            <span>SOME OF MY AREAS OF EXPERTISE</span>
+          </p>
+          <div class="row">
+            <div class="col-sm-3 col-xs-6">
+              <div class="feature-about">
+                <div class="medium-rectangle rectangle">
+                  <i class="fa fa-code" aria-hidden="true"></i>
+                </div>
+                <!-- /.rectangle -->
+                <h3>WEB DEVELOPMENT</h3>
+                <p>
+                  Taking the graphical elements defined in the design process
+                  and coding them into a custom theme using various languages
+                  such as HTML, PHP, CSS and JavaScript.
+                </p>
+              </div>
+              <!-- /.feature-about -->
+            </div>
+            <div class="col-sm-3 col-xs-6">
+              <div class="feature-about">
+                <div class="medium-rectangle rectangle">
+                  <i class="fa fa-laptop" aria-hidden="true"></i>
+                </div>
+                <!-- /.rectangle -->
+                <h3>SOFTWARE DEVELOPMENT</h3>
+                <p>
+                  Conceiving, specifying, designing, programming, documenting,
+                  testing, and bug fixing involved in creating and maintaining
+                  applications, frameworks, or other software components.
+                </p>
+              </div>
+              <!-- /.feature-about -->
+            </div>
+            <div class="col-sm-3 col-xs-6">
+              <div class="feature-about">
+                <div class="medium-rectangle rectangle">
+                  <i class="fa fa-lock" aria-hidden="true"></i>
+                </div>
+                <!-- /.rectangle -->
+                <h3>CYBER SECURITY</h3>
+                <p>
+                  The practice of defending computers, servers, mobile devices,
+                  electronic systems, networks, and data from malicious attacks.
+                </p>
+              </div>
+              <!-- /.feature-about -->
+            </div>
+            <div class="col-sm-3 col-xs-6">
+              <div class="feature-about">
+                <div class="medium-rectangle rectangle">
+                  <i class="fa fa-search" aria-hidden="true"></i>
+                </div>
+                <!-- /.rectangle -->
+                <h3>DIGITAL INVESTIGATION</h3>
+                <p>
+                  The identification, collection, examination, and analysis, of
+                  data while preserving the integrity of the information and
+                  maintaining a strict chain of custody for the data.
+                </p>
+              </div>
+              <!-- /.feature-about -->
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /.section-about -->
+      <!-- End About section -->
 
-    <!-- Feature 1 -->
-    <article id="bannerBlue" class="container box style1">
-      <header>
-        <h2>CYBER CRIME SPECIALIST</h2>
-      </header>
-      <p>Humber College - 2022</p>
-      <p></p>
-      <footer>
-        <a href="#contact" class="button style2 scrolly">CONTACT</a>
-      </footer>
-    </article>
+      <!-- History section -->
+      <section class="section-history" id="history">
+        <div class="container">
+          <div class="text-center section-diff-title">
+            <h2>EDUCATION & CERTIFICATIONS</h2>
+            <!--<p>This my Education and Experience</p>-->
+          </div>
+          <!-- Timeline -->
+          <ul class="timeline">
+            <!-- Timeline badge -->
+            <li class="timeline-start">
+              <div class="rectangle"><span>2022</span></div>
+            </li>
+            <!-- /.timeline-start -->
 
-    <!-- SYSTEMS ADMINISTRATION -->
-    <!--
-    <article id="first" class="container box style1 right">
-      <a href="#feature2" class="image fit scrolly"
-        ><img src="images/pic01_alt.jpg" alt=""
-      /></a>
-      <div class="inner">
-        <header>
-          <h2>
-            SYSTEMS<br />
-            ADMINISTRATION
-          </h2>
-        </header>
-        <p>
-          I have developed systems for Windows and Linux-based operating
-          systems. I am familiar with their architecture, and have experience
-          working with relational database management systems like MySQL to
-          configure, backup, monitor, and perform emergency rollbacks.
-        </p>
-      </div>
-    </article>
-  -->
-    <!-- ./SYSTEMS ADMINISTRATION -->
+            <!-- Timeline job & description, inverted  -->
+            <li class="timeline-inverted">
+              <div class="rectangle timeline-rectangle"></div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <div class="timeline-position">
+                    <p>CYBER SECURITY SPECIALIST</p>
+                  </div>
+                  <!-- /.timeline-position -->
+                  <div class="timeline-date">
+                    <p>2022</p>
+                  </div>
+                  <!-- /.timeline-date -->
+                </div>
+                <!-- /.timeline-heading -->
+                <div class="timeline-body">
+                  <div class="timeline-body-thumb">
+                    <img
+                      src="assets/img/timeline-img-hc.jpg"
+                      class="img-res"
+                      alt=""
+                    />
+                  </div>
+                  <!-- /.timeline-body-thumb -->
+                  <p>Humber College Certificate</p>
+                </div>
+                <!-- /.timeline-body -->
+              </div>
+              <!-- /.timeline-panel -->
+            </li>
+            <!-- /.timeline-inverted -->
 
-    <!-- SOFTWARE DEVELOPER -->
-    <!--
-    <article class="container box style1 left" id="feature2">
-      <a href="#feature3" class="image fit scrolly"
-        ><img src="images/pic02_alt.jpg" alt=""
-      /></a>
-      <div class="inner">
-        <header>
-          <h2>
-            SOFTWARE &amp; WEB<br />
-            DEVELOPMENT
-          </h2>
-        </header>
-        <p>
-          Proficient in C# and Java for native desktop application development,
-          and various languages for web-based projects like Python, PHP, and
-          MySQL. Currently, I work on IoT solutions focused on the use of
-          Raspberry Pis with Linux-based web servers for practical home
-          automation.
-        </p>
-      </div>
-    </article>
-    -->
-    <!-- ./SOFTWARE DEVELOPER -->
+            <!-- Timeline job & description  -->
+            <li>
+              <div class="rectangle timeline-rectangle"></div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <div class="timeline-date">
+                    <p>2020</p>
+                  </div>
+                  <!-- /.timeline-date -->
+                  <div class="timeline-position">
+                    <p>PROTECTION, SECURITY, INVESTIGATION</p>
+                  </div>
+                  <!-- /.timeline-position -->
+                </div>
+                <!-- /.timeline-heading -->
+                <div class="timeline-body">
+                  <div class="timeline-body-thumb">
+                    <img
+                      src="assets/img/timeline-img-dc.jpg"
+                      class="img-res"
+                      alt=""
+                    />
+                  </div>
+                  <!-- /.timeline-body-thumb -->
+                  <p>Durham College Diploma</p>
+                </div>
+                <!-- /.timeline-body -->
+              </div>
+              <!-- /.timeline-panel -->
+            </li>
 
-    <!-- INFORMATION SECURITY -->
-    <!--
-    <article class="container box style1 right" id="feature3">
-      <a href="#contact" class="image fit scrolly"
-        ><img src="images/pic03.jpg" alt=""
-      /></a>
-      <div class="inner">
-        <header>
-          <h2>INFORMATION SECURITY</h2>
-        </header>
-        <p>
-          Growing interest in open source intelligence (OSINT) presents a real
-          threat to data integrity. Keeping that in mind, I use a
-          security-centric mindset to identify and prevent potential security
-          vulnerabilities that may arise before, during, and post development.
-        </p>
-      </div>
-    </article>
-    -->
-    <!-- ./INFORMATION SECURITY -->
+            <!-- Timeline job & description, inverted  -->
+            <li class="timeline-inverted">
+              <div class="rectangle timeline-rectangle"></div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <div class="timeline-position">
+                    <p>ONTARIO SECURITY GUARD</p>
+                  </div>
+                  <!-- /.timeline-position -->
+                  <div class="timeline-date">
+                    <p>2020</p>
+                  </div>
+                  <!-- /.timeline-date -->
+                </div>
+                <!-- /.timeline-heading -->
+                <div class="timeline-body">
+                  <div class="timeline-body-thumb">
+                    <img
+                      src="assets/img/timeline-img-sg.jpg"
+                      class="img-res"
+                      alt=""
+                    />
+                  </div>
+                  <!-- /.timeline-body-thumb -->
+                  <p>Ministry of the Solicitor General</p>
+                </div>
+                <!-- /.timeline-body -->
+              </div>
+              <!-- /.timeline-panel -->
+            </li>
+            <!-- /.timeline-inverted -->
 
-    <!-- Portfolio -->
-    <!--<article class="container box style2">
-		<header>
-			<h2>PROJECTS</h2>
-			<p><i>Coming soon</i></p>
-		</header>
-		<!-<div class="inner gallery">
-					<div class="row gtr-0">
-						<div class="col-3 col-12-mobile"><a href="images/fulls/01.jpg" class="image fit"><img src="images/thumbs/01.jpg" alt="" title="Ad infinitum" /></a></div>
-						<div class="col-3 col-12-mobile"><a href="images/fulls/02.jpg" class="image fit"><img src="images/thumbs/02.jpg" alt="" title="Dressed in Clarity" /></a></div>
-						<div class="col-3 col-12-mobile"><a href="images/fulls/03.jpg" class="image fit"><img src="images/thumbs/03.jpg" alt="" title="Raven" /></a></div>
-						<div class="col-3 col-12-mobile"><a href="images/fulls/04.jpg" class="image fit"><img src="images/thumbs/04.jpg" alt="" title="I'll have a cup of Disneyland, please" /></a></div>
-					</div>
-					<div class="row gtr-0">
-						<div class="col-3 col-12-mobile"><a href="images/fulls/05.jpg" class="image fit"><img src="images/thumbs/05.jpg" alt="" title="Cherish" /></a></div>
-						<div class="col-3 col-12-mobile"><a href="images/fulls/06.jpg" class="image fit"><img src="images/thumbs/06.jpg" alt="" title="Different." /></a></div>
-						<div class="col-3 col-12-mobile"><a href="images/fulls/07.jpg" class="image fit"><img src="images/thumbs/07.jpg" alt="" title="History was made here" /></a></div>
-						<div class="col-3 col-12-mobile"><a href="images/fulls/08.jpg" class="image fit"><img src="images/thumbs/08.jpg" alt="" title="People come and go and walk away" /></a></div>
-					</div>
-				</div>
-	</article>-->
+            <!-- Timeline job & description  -->
+            <li>
+              <div class="rectangle timeline-rectangle"></div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <div class="timeline-date">
+                    <p>2018</p>
+                  </div>
+                  <!-- /.timeline-date -->
+                  <div class="timeline-position">
+                    <p>Standard First Aid CPR/AED Level C</p>
+                  </div>
+                  <!-- /.timeline-position -->
+                </div>
+                <!-- /.timeline-heading -->
+                <div class="timeline-body">
+                  <div class="timeline-body-thumb">
+                    <img
+                      src="assets/img/timeline-img-rc.jpg"
+                      class="img-res"
+                      alt=""
+                    />
+                  </div>
+                  <!-- /.timeline-body-thumb -->
+                  <p>Canadian Red Cross Certification</p>
+                </div>
+                <!-- /.timeline-body -->
+              </div>
+              <!-- /.timeline-panel -->
+            </li>
 
-    <!-- Contact -->
-    <article class="container box style3" id="contact">
-      <header>
-        <h2>CONTACT</h2>
-        <p>
-          <a href="mailto:nicolasluckie@gmail.com">nicolasluckie@gmail.com</a>
-        </p>
-      </header>
-      <!--<form method="post" action="#">
-					<div class="row gtr-50">
-						<div class="col-6 col-12-mobile"><input type="text" class="text" name="name" placeholder="Name" /></div>
-						<div class="col-6 col-12-mobile"><input type="text" class="text" name="email" placeholder="Email" /></div>
-						<div class="col-12">
-							<textarea name="message" placeholder="Message"></textarea>
-						</div>
-						<div class="col-12">
-							<ul class="actions">
-								<li><input type="submit" value="Send Message" /></li>
-							</ul>
-						</div>
-					</div>
-				</form>-->
-    </article>
+            <!-- Timeline job & description, inverted  -->
+            <li class="timeline-inverted">
+              <div class="rectangle timeline-rectangle"></div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <div class="timeline-position">
+                    <p>COMPUTER PROGRAMMING</p>
+                  </div>
+                  <!-- /.timeline-position -->
+                  <div class="timeline-date">
+                    <p>2017</p>
+                  </div>
+                  <!-- /.timeline-date -->
+                </div>
+                <!-- /.timeline-heading -->
+                <div class="timeline-body">
+                  <div class="timeline-body-thumb">
+                    <img
+                      src="assets/img/timeline-img-sc.jpg"
+                      class="img-res"
+                      alt=""
+                    />
+                  </div>
+                  <!-- /.timeline-body-thumb -->
+                  <p>Sheridan College Diploma</p>
+                </div>
+                <!-- /.timeline-body -->
+              </div>
+              <!-- /.timeline-panel -->
+            </li>
+            <!-- /.timeline-inverted -->
 
-    <section id="footer">
-      <ul class="icons">
-        <li>
+            <!-- Timeline Badge  -->
+            <li class="timeline-end">
+              <div class="rectangle"><span>2017</span></div>
+            </li>
+            <!-- /.timeline-end -->
+          </ul>
+          <!-- /.timeline -->
+        </div>
+      </section>
+      <!-- /.section-history -->
+      <!-- End History section -->
+
+      <!-- GitHub section -->
+      <section
+        class="section-background section-twitter background-overlay text-center"
+        id="contact"
+      >
+        <div class="container">
+          <div class="rectangle">
+            <i class="fa fa-envelope"></i>
+          </div>
+          <p>Contact Me</p>
+          <a href="mailto:nicolasluckie@gmail.com" class="btn btn-inverted"
+            >EMAIL</a
+          >
+        </div>
+      </section>
+      <!-- /.section-twitter-->
+      <!-- End Twitter section -->
+
+      <!-- Clients section -->
+      <section class="section-clients">
+        <div class="container">
+          <div class="text-center section-diff-title">
+            <h2>Clients I’ve Worked For</h2>
+            <p></p>
+          </div>
+          <div class="row text-center">
+            <!-- Client -->
+            <a
+              target="_blank"
+              href="https://mackinnonbowes.com/"
+              class="client"
+            >
+              <img
+                src="assets/img/client-1.png"
+                class="img-responsive"
+                alt=""
+              /> </a
+            ><!-- /.client -->
+          </div>
+          <!-- /.clients-carousel -->
+        </div>
+      </section>
+      <!-- /.section-clients -->
+      <!-- End Clients section -->
+
+      <!-- Social Networks section -->
+      <section class="section-networks blue-bg">
+        <div class="container">
           <a
-            target="_BLANK"
+            target="_blank"
             href="https://www.facebook.com/nicolasluckie"
-            class="icon fa-facebook"
-            ><span class="label">Facebook</span></a
+            class="rectangle"
           >
-        </li>
-        <li>
+            <i class="fa fa-facebook"></i>
+          </a>
           <a
-            target="_BLANK"
-            href="https://github.com/nicolasluckie"
-            class="icon fa-github"
-            ><span class="label">GitHub</span></a
-          >
-        </li>
-        <li>
-          <a
-            target="_BLANK"
+            target="_blank"
             href="https://www.linkedin.com/in/nicolasluckie"
-            class="icon fa-linkedin"
-            ><span class="label">LinkedIn</span></a
+            class="rectangle"
           >
-        </li>
-      </ul>
-      <div class="copyright">
-        <ul class="menu">
-          <li><i>Thanks for visiting!</i></li>
-        </ul>
-      </div>
-    </section>
+            <i class="fa fa-linkedin"></i>
+          </a>
+          <a
+            target="_blank"
+            href="https://github.com/nicolasluckie"
+            class="rectangle"
+          >
+            <i class="fa fa-github"></i>
+          </a>
+        </div>
+      </section>
+      <!-- /.section-networks-->
+      <!-- End Social Networks section -->
+    </main>
+    <!-- /#main -->
+    <!-- End Main content -->
 
-    <!-- Scripts -->
+    <!-- Footer -->
+    <footer id="colophon" class="site-footer">
+      <div class="container-fluid">
+        <ul class="list-unstyled list-inline">
+          <li class="page-scroll"><a href="#top">Home</a></li>
+          <!--<li class="page-scroll"><a href="#intro">Intro</a></li>-->
+          <li class="page-scroll"><a href="#about">Skills</a></li>
+          <!--<li class="page-scroll"><a href="#services">Services</a></li>-->
+          <!--<li class="page-scroll"><a href="#team">Team</a></li>-->
+          <li class="page-scroll"><a href="#history">Education</a></li>
+          <!--<li class="page-scroll"><a href="#works">Works</a></li>-->
+          <li class="page-scroll"><a href="#contact">Contact</a></li>
+        </ul>
+
+        <div class="page-scroll">
+          <a href="#top" class="rectangle">
+            <i class="fa fa-angle-double-up"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="container text-center">
+        <p class="copyright">&copy; Nicolas Luckie - 2022</p>
+      </div>
+    </footer>
+    <!-- /#footer -->
+    <!-- End Footer -->
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <!-- jQuery core js | Do not Delete -->
     <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/jquery.scrolly.min.js"></script>
-    <script src="assets/js/jquery.poptrox.min.js"></script>
-    <script src="assets/js/browser.min.js"></script>
-    <script src="assets/js/breakpoints.min.js"></script>
-    <script src="assets/js/util.js"></script>
-    <script src="assets/js/main.js"></script>
+
+    <!-- Bootstrap core js | Do not Delete -->
+    <script src="assets/js/bootstrap.min.js"></script>
+
+    <!-- Bootstrap progressbar JS -->
+    <script src="assets/js/bootstrap-progressbar.min.js"></script>
+
+    <!-- Count To JS -->
+    <script src="assets/js/jquery.countTo.min.js"></script>
+
+    <!-- Easing JS -->
+    <script src="assets/js/jquery.easing.min.js"></script>
+
+    <!-- Shuffle JS -->
+    <script src="assets/js/jquery.shuffle.min.js"></script>
+
+    <!-- Slick Carousel JS -->
+    <script src="assets/js/slick.min.js"></script>
+
+    <!-- Touchswipe JS -->
+    <script src="assets/js/touchswipe.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="assets/js/script.js"></script>
   </body>
 </html>
