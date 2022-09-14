@@ -69,7 +69,12 @@
     <![endif]-->
 
     <!-- Tracking -->
-    <script async defer data-website-id="fbcc872a-ce11-486e-b022-753cd0d16e56" src="https://analytics.nicolasluckie.com/umami.js"></script>
+    <script
+      async
+      defer
+      data-website-id="643f4852-ef25-4c04-96ea-9f9d61e073fe"
+      src="https://analytics.nicolasluckie.com/umami.js"
+    ></script>
   </head>
   <body>
     <!-- Hero Section, Background Image change in css -->
@@ -428,7 +433,7 @@
             <i class="fa fa-envelope"></i>
           </div>
           <p>Contact Me</p>
-          <a href="mailto:nicolasluckie@gmail.com" class="btn btn-inverted"
+          <a href="mailto:nicolasluckie@gmail.com" class="btn btn-inverted" id="email"
             >EMAIL</a
           >
         </div>
@@ -449,6 +454,7 @@
               target="_blank"
               href="https://mackinnonbowes.com/"
               class="client"
+              id="btnMackBowes"
             >
               <img
                 src="assets/img/client-1.png"
@@ -457,7 +463,12 @@
               /> </a
             ><!-- /.client -->
             <!-- Client -->
-            <a target="_blank" href="https://www.eurofase.com/" class="client">
+            <a
+              target="_blank"
+              href="https://www.eurofase.com/"
+              class="client"
+              id="btnEurofase"
+            >
               <img
                 src="assets/img/client-2.png"
                 class="img-responsive"
@@ -560,5 +571,15 @@
 
     <!-- Custom JS -->
     <script src="assets/js/script.js"></script>
+
+    <!-- Tracking Events -->
+    <script type="text/javascript">
+      const btnMackBowes = document.getElementById("btnMackBowes");
+      btnMackBowes.onclick = () => umami("Mackinnon & Bowes button press");
+      const btnEurofase = document.getElementById("btnEurofase");
+      btnEurofase.onclick = () => umami("Eurofase button press");
+      const btnEmail = document.getElementById("email");
+      btnEmail.onclick = () => umami("Email button press");
+    </script>
   </body>
 </html>
