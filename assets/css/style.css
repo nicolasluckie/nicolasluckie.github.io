@@ -440,7 +440,7 @@ body {
 /* HERO
 ================================================== */
 .hero {
-  background: url(../img/hero.jpg) center no-repeat;
+  background: url(../img/hero2.jpg) center no-repeat;
   height: 100%;
   width: 100%;
   display: table;
@@ -2066,7 +2066,7 @@ body {
 
 /* Sections background: Quote */
 .section-quote {
-  background: url(../img/quote.jpg) center no-repeat fixed;
+  background: url(../img/quote.jpg) center no-repeat;
 }
 
 .section-quote p {
@@ -2080,7 +2080,7 @@ body {
 
 /* Sections background: Me */
 .section-me {
-  background: url(../img/portfolio-7.jpg) center no-repeat fixed;
+  background: url(../img/portfolio-7.jpg) center no-repeat;
 }
 
 .section-me h2 {
@@ -2091,7 +2091,7 @@ body {
 
 /* Sections background: Twitter */
 .section-twitter {
-  background: url(../img/portfolio-8.jpg) center no-repeat fixed;
+  background: url(../img/portfolio-8.jpg) center no-repeat;
 }
 
 .section-twitter .container {
