@@ -1,6 +1,7 @@
 <?php
 session_start();
-require_once("./db/db.inc.php");
+require_once("../db/db.inc.php");
+
 ?>
 
 <!DOCTYPE html>
@@ -37,7 +38,7 @@ require_once("./db/db.inc.php");
     }
 
     .container {
-      height: 450px;
+      height: 650px;
       width: 600px;
       position: absolute;
       transform: translate(-50%, -50%);
@@ -71,7 +72,7 @@ require_once("./db/db.inc.php");
 
     .card {
       position: absolute;
-      height: 350px;
+      height: 550px;
       width: 550px;
       background-color: rgba(255, 255, 255, 0.15);
       border: 2px solid rgba(255, 255, 255, 0.2);
@@ -90,7 +91,7 @@ require_once("./db/db.inc.php");
       filter: drop-shadow(0 0 20px rgba(26, 0, 68, 0.34));
       bottom: 0;
       left: 120px;
-      top: 10%;
+      top: 20%;
       transition: 0.5s ease;
     }
 
@@ -162,19 +163,20 @@ require_once("./db/db.inc.php");
 
 <body>
   <div class="container">
-    <div class="shapes"></div>
     <div class="w3-center w3-animate-bottom" style="line-height: 0; text-shadow: rgba(255,255,255,0.9) 0px 0px 12px;">
-      <h2 style="text-align: center; font-family: 'Playfair Display', serif;"><?php echo getTimeBasedWelcomeMsg(); ?></h2>
+      <h2 style="text-align: center; font-family: 'Playfair Display', serif;">Hello, beautiful 😘</h2>
     </div>
     <div class="card" id="card" style="font-family: 'Poppins', sans-serif;">
-      <img src="<?php echo pickRandomImage(); ?>" />
+      <img src="../public/loveyou4.PNG" />
       <div class="overlay">
         <div class="text-container">
-          <h2 id="date" style="font-family: 'Poppins', sans-serif;"><?php echo getTuesday(); ?></h2>
+          <h2 id="date" style="font-family: 'Poppins', sans-serif;">Happy 6 Months!</h2>
           <p>
-            <?php echo pickRandomLine(); ?>
+          I can’t believe you’ve put up with me for half a year and haven’t ran away… yet 😈<br><br>
+      I appreciate all of your love, patience, and incredible dad jokes. You make me a better man with each passing day.<br><br>
+      Thank you for being so simply wonderful.
             <br />
-            <small>I love you,<br />Ninky Doody, xo</small>
+            <small>I love you now and always,<br />Ninky Doody 💘</small>
           </p>
         </div>
       </div>

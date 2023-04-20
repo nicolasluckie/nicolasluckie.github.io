@@ -34,7 +34,7 @@ $noTracking = ["10.0.0.50", "173.34.41.208"]
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-  <title>Nic Luckie</title>
+  <title id="title">Nic Luckie</title>
 
   <meta name="description" content="" />
   <meta name="author" content="" />
@@ -76,11 +76,11 @@ $noTracking = ["10.0.0.50", "173.34.41.208"]
     <![endif]-->
 
   <!-- Tracking [DISABLED FROM LOCAL IP] -->
-  <?php 
+  <?php
   if (in_array(getRealIpAddr(), $noTracking) == false) {
-    echo '<script async defer data-website-id="643f4852-ef25-4c04-96ea-9f9d61e073fe" src="https://analytics.nicolasluckie.com/umami.js"></script>';
+    echo '<script async src="https://analytics.nicolasluckie.com/script.js" data-website-id="0c0795bd-4750-45b6-bcec-ffd99748bb85"></script>';
   }
-  
+
   ?>
 </head>
 
@@ -127,23 +127,23 @@ $noTracking = ["10.0.0.50", "173.34.41.208"]
           <!-- Navigation -->
           <ul class="nav navbar-nav navbar-right">
             <li class="page-scroll">
-              <a href="#main" class="umami--click--About1">About</a>
+              <a href="#main" id="about1">About</a>
             </li>
             <!--<li class="page-scroll"><a href="#intro">Intro</a></li>-->
             <li class="page-scroll">
-              <a href="#about" class="umami--click--Skills1">Skills</a>
+              <a href="#about" id="skills1">Skills</a>
             </li>
             <!--<li class="page-scroll"><a href="#services">Services</a></li>-->
             <!--<li class="page-scroll"><a href="#team">Team</a></li>-->
             <li class="page-scroll">
-              <a href="#history" class="umami--click--Education1">Education</a>
+              <a href="#history" id="education1">Education</a>
             </li>
             <!--<li class="page-scroll"><a href="#works">Works</a></li>-->
             <li class="page-scroll">
-              <a href="#contact" class="umami--click--Contact1">Contact</a>
+              <a href="#contact" id="contact1">Contact</a>
             </li>
             <li class="page-scroll">
-              <a href="https://blog.nicolasluckie.com/" class="umami--click--Blog1" target="_blank">Blog</a>
+              <a href="https://blog.nicolasluckie.com/" target="_blank" id="blog1">Blog</a>
             </li>
           </ul>
           <!-- /.navbar-nav -->
@@ -191,9 +191,9 @@ $noTracking = ["10.0.0.50", "173.34.41.208"]
               <!-- /.rectangle -->
               <h3>WEB DEVELOPMENT</h3>
               <p>
-                Taking the graphical elements defined in the design process
-                and coding them into a custom theme using various languages
-                such as HTML, PHP, CSS and JavaScript.
+              I have expertise in taking graphical elements provided during the design process
+              and coding them into custom themes using various web development languages such as
+              HTML, PHP, CSS, and JavaScript to create interactive and user-friendly websites.
               </p>
             </div>
             <!-- /.feature-about -->
@@ -206,9 +206,11 @@ $noTracking = ["10.0.0.50", "173.34.41.208"]
               <!-- /.rectangle -->
               <h3>SOFTWARE DEVELOPMENT</h3>
               <p>
-                Conceiving, specifying, designing, programming, documenting,
-                testing, and bug fixing involved in creating and maintaining
-                applications, frameworks, or other software components.
+              I am skilled in conceiving, specifying, designing, programming, documenting, testing,
+              and debugging software components and applications to ensure optimal functionality,
+              performance, and user experience. I have experience in maintaining and updating
+              software components and applications to meet changing business needs
+              and user requirements.
               </p>
             </div>
             <!-- /.feature-about -->
@@ -221,8 +223,10 @@ $noTracking = ["10.0.0.50", "173.34.41.208"]
               <!-- /.rectangle -->
               <h3>CYBER SECURITY</h3>
               <p>
-                The practice of defending computers, servers, mobile devices,
-                electronic systems, networks, and data from malicious attacks.
+              I am knowledgeable in implementing security protocols and measures to safeguard
+              computer systems, servers, mobile devices, electronic systems, networks, and data
+              from cyber-attacks. I can analyze security risks and vulnerabilities, and
+              implement solutions to mitigate them.
               </p>
             </div>
             <!-- /.feature-about -->
@@ -235,9 +239,10 @@ $noTracking = ["10.0.0.50", "173.34.41.208"]
               <!-- /.rectangle -->
               <h3>DIGITAL INVESTIGATION</h3>
               <p>
-                The identification, collection, examination, and analysis, of
-                data while preserving the integrity of the information and
-                maintaining a strict chain of custody for the data.
+              I have expertise in identifying, collecting, examining, and analyzing data
+              while maintaining data integrity and a strict chain of custody.
+              I can investigate malware, data breaches, cyber-attacks, digital identity theft,
+              and provide technical support during legal proceedings.
               </p>
             </div>
             <!-- /.feature-about -->
@@ -435,9 +440,9 @@ $noTracking = ["10.0.0.50", "173.34.41.208"]
               margin-top: 35px;
               position: relative;
             ">
-          <a class="umami--click--ContactQR-click" href="public/nicolasluckie.vcf" id="contactqr"><img style="border-radius: 10px; width: 200px" src="assets/img/qr-code.svg" /></a>
+          <a href="public/nicolasluckie.vcf" id="contactqr"><img style="border-radius: 10px; width: 200px" src="assets/img/qr-code.svg" /></a>
         </div>
-        <a href="mailto:nicolasluckie@gmail.com" class="btn btn-inverted umami--click--Email-click" id="email">EMAIL</a>
+        <a href="mailto:nicolasluckie@gmail.com" class="btn btn-inverted" id="email">EMAIL</a>
       </div>
     </section>
     <!-- /.section-twitter-->
@@ -452,13 +457,13 @@ $noTracking = ["10.0.0.50", "173.34.41.208"]
         </div>
         <div class="row text-center">
           <!-- RBC -->
-          <a target="_blank" href="https://www.rbc.com/about-rbc.html" class="client umami--click--RBC-click" id="btnRbc">
+          <a target="_blank" href="https://www.rbc.com/about-rbc.html" class="client" id="btnRbc">
             <img src="assets/img/client-3.png" class="img-responsive" alt="" /> </a><!-- /.client -->
           <!-- MacKinnon and Bowes -->
-          <a target="_blank" href="https://mackinnonandbowes.com/" class="client umami--click--MackBowes-click" id="btnMackBowes">
+          <a target="_blank" href="https://mackinnonandbowes.com/" class="client" id="btnMackBowes">
             <img src="assets/img/client-1.png" class="img-responsive" alt="" /> </a><!-- /.client -->
           <!-- Eurofase -->
-          <a target="_blank" href="https://www.eurofase.com/" class="client umami--click--Eurofase-click" id="btnEurofase">
+          <a target="_blank" href="https://www.eurofase.com/" class="client" id="btnEurofase">
             <img src="assets/img/client-2.png" class="img-responsive" alt="" /> </a><!-- /.client -->
         </div>
         <!-- /.clients-carousel -->
@@ -470,13 +475,13 @@ $noTracking = ["10.0.0.50", "173.34.41.208"]
     <!-- Social Networks section -->
     <section class="section-networks blue-bg">
       <div class="container">
-        <!-- <a target="_blank" href="https://www.facebook.com/nicolasluckie" class="rectangle umami--click--Facebook">
+        <!-- <a target="_blank" href="https://www.facebook.com/nicolasluckie" id="btnFacebook">
           <i class="fa fa-facebook"></i>
         </a> -->
-        <a target="_blank" href="https://www.linkedin.com/in/nicolasluckie" class="rectangle umami--click--Linkedin">
+        <a target="_blank" href="https://www.linkedin.com/in/nicolasluckie" id="btnLinkedin">
           <i class="fa fa-linkedin"></i>
         </a>
-        <a target="_blank" href="https://github.com/nicolasluckie" class="rectangle umami--click--GitHub">
+        <a target="_blank" href="https://github.com/nicolasluckie" id="btnGithub">
           <i class="fa fa-github"></i>
         </a>
       </div>
@@ -492,23 +497,23 @@ $noTracking = ["10.0.0.50", "173.34.41.208"]
     <div class="container-fluid">
       <ul class="list-unstyled list-inline">
         <li class="page-scroll">
-          <a href="#main" class="umami--click--About2">About</a>
+          <a href="#main" id="about2">About</a>
         </li>
         <!--<li class="page-scroll"><a href="#intro">Intro</a></li>-->
         <li class="page-scroll">
-          <a href="#about" class="umami--click--Skills2">Skills</a>
+          <a href="#about" id="skills2">Skills</a>
         </li>
         <!--<li class="page-scroll"><a href="#services">Services</a></li>-->
         <!--<li class="page-scroll"><a href="#team">Team</a></li>-->
         <li class="page-scroll">
-          <a href="#history" class="umami--click--Education2">Education</a>
+          <a href="#history" id="education2">Education</a>
         </li>
         <!--<li class="page-scroll"><a href="#works">Works</a></li>-->
         <li class="page-scroll">
-          <a href="#contact" class="umami--click--Contact2">Contact</a>
+          <a href="#contact" id="contact2">Contact</a>
         </li>
         <li class="page-scroll">
-          <a href="https://blog.nicolasluckie.com/" class="umami--click--Blog2" target="_blank">Blog</a>
+          <a href="https://blog.nicolasluckie.com/" target="_blank" id="blog2">Blog</a>
         </li>
       </ul>
 
@@ -520,7 +525,7 @@ $noTracking = ["10.0.0.50", "173.34.41.208"]
     </div>
 
     <div class="container text-center">
-      <p class="copyright">&copy; 2023 Nicolas Luckie</p>
+      <p class="copyright">&copy; <?php echo date("Y"); ?> Nicolas Luckie</p>
     </div>
   </footer>
   <!-- /#footer -->
@@ -555,6 +560,74 @@ $noTracking = ["10.0.0.50", "173.34.41.208"]
 
   <!-- Custom JS -->
   <script src="assets/js/script.js"></script>
+
+  <script type="text/javascript">
+    $(document).ready(function() {
+      // Button click events
+      // top navbar
+      $("#about1").click(function() {
+        umami.track("About (top) clicked");
+      });
+      $("#skills1").click(function() {
+        umami.track("Skills (top) clicked");
+      });
+      $("#education1").click(function() {
+        umami.track("Education (top) clicked");
+      });
+      $("#contact1").click(function() {
+        umami.track("Contact (top) clicked");
+      });
+      $("#blog1").click(function() {
+        umami.track("Blog (top) clicked");
+      });
+      // Contact section
+      $("#contactqr").click(function() {
+        umami.track("Contact:QR clicked");
+      });
+      $("#email").click(function() {
+        umami.track("Contact:email clicked");
+      });
+
+      // Client buttons
+      $("#btnRbc").click(function() {
+        umami.track("Client:RBC clicked");
+      });
+      $("#btnMackBowes").click(function() {
+        umami.track("Client:MackBowes clicked");
+      });
+      $("#btnEurofase").click(function() {
+        umami.track("Client:Eurofase clicked");
+      });
+
+      // Social buttons
+      // $("#btnFacebook").click(function() {
+      //   umami.track("Social:Facebook clicked");
+      // });
+      $("#btnLinkedin").click(function() {
+        umami.track("Social:Linkedin clicked");
+      });
+      $("#btnGithub").click(function() {
+        umami.track("Social:GitHub clicked");
+      });
+
+      // Bottom navbar
+      $("#about2").click(function() {
+        umami.track("About (bottom) clicked");
+      });
+      $("#skills2").click(function() {
+        umami.track("Skills (bottom) clicked");
+      });
+      $("#education2").click(function() {
+        umami.track("Education (bottom) clicked");
+      });
+      $("#contact2").click(function() {
+        umami.track("Contact (bottom) clicked");
+      });
+      $("#blog2").click(function() {
+        umami.track("Blog (bottom) clicked");
+      });
+    });
+  </script>
 </body>
 
 </html>

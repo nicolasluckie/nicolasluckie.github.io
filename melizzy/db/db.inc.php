@@ -173,7 +173,7 @@ function IsNullOrEmptyString($str)
     return (!isset($str) || trim($str) === '');
 }
 
-function pickRandomLine()
+function pickRandomLine()                               
 {
     $file = './public/sayings.txt';
     $lines = file($file, FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
