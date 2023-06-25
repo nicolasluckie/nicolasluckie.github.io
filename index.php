@@ -430,19 +430,22 @@ $noTracking = ["10.0.0.50", "173.34.41.208"]
     <!-- GitHub section -->
     <section class="section-background section-twitter background-overlay text-center" id="contact">
       <div class="container">
-        <div class="rectangle">
+        <!--<div class="rectangle">
           <i class="fa fa-envelope"></i>
+        </div>-->
+        <div class="text-center section-diff-title">
+          <h2 style="color: white;">Contact Me</h2>
+          <!--<p>This my Education and Experience</p>-->
         </div>
-        <p>Contact Me</p>
         <div class="text-center" style="
               margin-left: auto;
               margin-right: auto;
               margin-top: 35px;
               position: relative;
             ">
-          <a href="public/nicolasluckie.vcf" id="contactqr"><img style="border-radius: 10px; width: 200px" src="assets/img/qr-code.svg" /></a>
+          <a href="vcard/nicolasluckie" id="contactqr"><img style="border-radius: 10px; width: 200px" src="assets/img/qr-code.svg" /></a>
         </div>
-        <a href="mailto:nicolasluckie@gmail.com" class="btn btn-inverted" id="email">EMAIL</a>
+        <!--<a href="mailto:nicolasluckie@gmail.com" class="btn btn-inverted" id="email">EMAIL</a>-->
       </div>
     </section>
     <!-- /.section-twitter-->

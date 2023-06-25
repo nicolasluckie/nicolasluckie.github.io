@@ -1,0 +1,21 @@
+BEGIN:VCARD
+VERSION:3.0
+N:Luckie;Nicolas;;;
+FN:Nicolas Luckie
+ORG:RBC
+ADR;TYPE=WORK:
+TITLE:Software Developer
+TEL;TYPE=CELL:
+TEL;TYPE=WORK:
+TEL;TYPE=HOME:
+TEL;TYPE=MSG:
+EMAIL;TYPE=WORK:nicolasluckie@gmail.com
+URL;TYPE=Digital Business Card:
+URL:https://nicolasluckie.com/
+URL;TYPE=Website:https://nicolasluckie.com/
+URL;TYPE=GitHub:https://github.com/nicolasluckie
+URL;TYPE=LinkedIn:https://linkedin.com/in/nicolasluckie
+KEY;TYPE=PGP;ENCODING=b:
+NOTE:
+UID:EnBizCard-100180006
+END:VCARD
