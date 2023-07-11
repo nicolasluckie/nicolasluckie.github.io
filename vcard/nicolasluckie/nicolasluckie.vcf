@@ -10,12 +10,12 @@ TEL;TYPE=WORK:
 TEL;TYPE=HOME:
 TEL;TYPE=MSG:
 EMAIL;TYPE=WORK:nicolasluckie@gmail.com
-URL;TYPE=Digital Business Card:
-URL:https://nicolasluckie.com/
-URL;TYPE=Website:https://nicolasluckie.com/
-URL;TYPE=GitHub:https://github.com/nicolasluckie
+URL;TYPE=Digital Business Card:https://nicolasluckie.com/vcard/nicolasluckie
+URL:https://nicolasluckie.com
+URL;TYPE=Website:https://nicolasluckie.com
 URL;TYPE=LinkedIn:https://linkedin.com/in/nicolasluckie
+URL;TYPE=GitHub:https://github.com/nicolasluckie
 KEY;TYPE=PGP;ENCODING=b:
 NOTE:
-UID:EnBizCard-100180006
+UID:EnBizCard-100502097
 END:VCARD
