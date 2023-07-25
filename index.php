@@ -91,7 +91,7 @@ $noTracking = ["10.0.0.50", "173.34.41.208"]
     <div class="hero-content">
       <h1>Nic Luckie<span class="blink">_</span></h1>
       <p class="hero-job" style="margin-top: 40px">
-        <span style="border-bottom: none">SOFTWARE DEVELOPER //</span><br /><span>CYBER SECURITY SPECIALIST</span>
+        <span style="border-bottom: none">SOFTWARE DEVELOPER
       </p>
       <!--<p class="hero-job-desc">FOR HIRE</p>-->
     </div>
@@ -162,13 +162,12 @@ $noTracking = ["10.0.0.50", "173.34.41.208"]
     <section class="section-background section-quote background-overlay text-center" id="quote">
       <div class="container" style="background-color: rgba(0, 0, 0, 0.5);border-radius: 15px;padding: 10px;box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.75);-webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.75);-moz-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.75);">
         <p>
-          I'm a <span>software developer</span> and <span>cyber security</span> specialist,
-          with a passion for <span>digital forensics</span>.
-          A <span style="color: #128df9">creative</span> problem solver with
-          experience <span style="color: #128df9">designing</span>,
-          <span style="color: #128df9">implementing</span> and
-          <span style="color: #128df9">improving</span> processes through
-          software driven solutions.
+          A creative problem solver who enjoys <span>designing</span>, <span>improving</span>, and <span>automating processes</span> with software-driven solutions.
+
+          <br/><br/>Experienced in <span style="color: #128df9">web</span> and <span style="color: #128df9">software development</span>, IT project management,
+          and supporting multiple large-scale technology projects and initiatives at various stages in the software development life cycle.
+
+          <br/><br/>Having always been fascinated by technology and eager to learn new things, I have learned several <span style="color: #128df9">programming languages</span>, <span style="color: #128df9">applications</span>, <span style="color: #128df9">platforms</span>, and <span style="color: #128df9">operating systems</span> on my own initiative; and in school.
         </p>
       </div>
     </section>
@@ -191,9 +190,9 @@ $noTracking = ["10.0.0.50", "173.34.41.208"]
               <!-- /.rectangle -->
               <h3>WEB DEVELOPMENT</h3>
               <p>
-              I have expertise in taking graphical elements provided during the design process
-              and coding them into custom themes using various web development languages such as
-              HTML, PHP, CSS, and JavaScript to create interactive and user-friendly websites.
+                Taking graphical elements provided during the design process
+                and coding them into custom themes using various web development languages such as
+                HTML, PHP, CSS, and JavaScript to create interactive and user-friendly websites.
               </p>
             </div>
             <!-- /.feature-about -->
@@ -206,11 +205,11 @@ $noTracking = ["10.0.0.50", "173.34.41.208"]
               <!-- /.rectangle -->
               <h3>SOFTWARE DEVELOPMENT</h3>
               <p>
-              I am skilled in conceiving, specifying, designing, programming, documenting, testing,
-              and debugging software components and applications to ensure optimal functionality,
-              performance, and user experience. I have experience in maintaining and updating
-              software components and applications to meet changing business needs
-              and user requirements.
+                Conceiving, specifying, designing, programming, documenting, testing,
+                and debugging software components and applications to ensure optimal functionality,
+                performance, and user experience. I have experience in maintaining and updating
+                software components and applications to meet changing business needs
+                and user requirements.
               </p>
             </div>
             <!-- /.feature-about -->
@@ -223,10 +222,10 @@ $noTracking = ["10.0.0.50", "173.34.41.208"]
               <!-- /.rectangle -->
               <h3>CYBER SECURITY</h3>
               <p>
-              I am knowledgeable in implementing security protocols and measures to safeguard
-              computer systems, servers, mobile devices, electronic systems, networks, and data
-              from cyber-attacks. I can analyze security risks and vulnerabilities, and
-              implement solutions to mitigate them.
+                Implementing security protocols and measures to safeguard
+                computer systems, servers, mobile devices, electronic systems, networks, and data
+                from cyber-attacks. I can analyze security risks and vulnerabilities, and
+                implement solutions to mitigate them.
               </p>
             </div>
             <!-- /.feature-about -->
@@ -239,10 +238,10 @@ $noTracking = ["10.0.0.50", "173.34.41.208"]
               <!-- /.rectangle -->
               <h3>DIGITAL INVESTIGATION</h3>
               <p>
-              I have expertise in identifying, collecting, examining, and analyzing data
-              while maintaining data integrity and a strict chain of custody.
-              I can investigate malware, data breaches, cyber-attacks, digital identity theft,
-              and provide technical support during legal proceedings.
+                Identifying, collecting, examining, and analyzing data
+                while maintaining data integrity and a strict chain of custody.
+                I can investigate malware, data breaches, cyber-attacks, digital identity theft,
+                and provide technical support during legal proceedings.
               </p>
             </div>
             <!-- /.feature-about -->
