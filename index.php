@@ -1,10 +1,10 @@
 <?php
 function getRealIpAddr()
 {
-  if (!empty($_SERVER['HTTP_CLIENT_IP']))   //check ip from share internet
+  if (!empty($_SERVER['HTTP_CLIENT_IP'])) //check ip from share internet
   {
     $ip = $_SERVER['HTTP_CLIENT_IP'];
-  } elseif (!empty($_SERVER['HTTP_X_FORWARDED_FOR']))   //to check ip is pass from proxy
+  } elseif (!empty($_SERVER['HTTP_X_FORWARDED_FOR'])) //to check ip is pass from proxy
   {
     $ip = $_SERVER['HTTP_X_FORWARDED_FOR'];
   } else {
@@ -14,7 +14,7 @@ function getRealIpAddr()
 }
 // List of IPs with tracking disabled
 $noTracking = ["10.0.0.50", "173.34.41.208"]
-?>
+  ?>
 
 <!DOCTYPE html>
 <!--
@@ -110,7 +110,8 @@ $noTracking = ["10.0.0.50", "173.34.41.208"]
     <nav id="primary-navigation" class="site-navigation" data-spy="affix">
       <div class="container">
         <div class="navbar-header page-scroll">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#portfolio-perfect-collapse" aria-expanded="false">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+            data-target="#portfolio-perfect-collapse" aria-expanded="false">
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
@@ -160,14 +161,21 @@ $noTracking = ["10.0.0.50", "173.34.41.208"]
   <main id="main" class="site-main">
     <!-- Quote section -->
     <section class="section-background section-quote background-overlay text-center" id="quote">
-      <div class="container" style="background-color: rgba(0, 0, 0, 0.5);border-radius: 15px;padding: 10px;box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.75);-webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.75);-moz-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.75);">
+      <div class="container"
+        style="background-color: rgba(0, 0, 0, 0.5);border-radius: 15px;padding: 10px;box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.75);-webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.75);-moz-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.75);">
         <p>
-          A creative problem solver who enjoys <span>designing</span>, <span>improving</span>, and <span>automating processes</span> with software-driven solutions.
+          A creative problem solver who enjoys <span>designing</span>, <span>improving</span>, and <span>automating
+            processes</span> with software-driven solutions.
 
-          <br/><br/>Experienced in <span style="color: #128df9">web</span> and <span style="color: #128df9">software development</span>, IT project management,
-          and supporting multiple large-scale technology projects and initiatives at various stages in the software development life cycle.
+          <br /><br />Experienced in <span style="color: #128df9">web</span> and <span style="color: #128df9">software
+            development</span>, IT project management,
+          and supporting multiple large-scale technology projects and initiatives at various stages in the software
+          development life cycle.
 
-          <br/><br/>Having always been fascinated by technology and eager to learn new things, I have learned several <span style="color: #128df9">programming languages</span>, <span style="color: #128df9">applications</span>, <span style="color: #128df9">platforms</span>, and <span style="color: #128df9">operating systems</span> on my own initiative; and in school.
+          <br /><br />Having always been fascinated by technology and eager to learn new things, I have learned several
+          <span style="color: #128df9">programming languages</span>, <span style="color: #128df9">applications</span>,
+          <span style="color: #128df9">platforms</span>, and <span style="color: #128df9">operating systems</span> on my
+          own initiative; and in school.
         </p>
       </div>
     </section>
@@ -187,64 +195,113 @@ $noTracking = ["10.0.0.50", "173.34.41.208"]
               <div class="medium-rectangle rectangle">
                 <i class="fa fa-code" aria-hidden="true"></i>
               </div>
-              <!-- /.rectangle -->
-              <h3>WEB DEVELOPMENT</h3>
-              <p>
-                Taking graphical elements provided during the design process
-                and coding them into custom themes using various web development languages such as
-                HTML, PHP, CSS, and JavaScript to create interactive and user-friendly websites.
+
+              <h3>FULL STACK DEVELOPMENT</h3>
+              <p>As a full stack developer, I support both front-end and back-end aspects of web development. I code the
+                graphical elements of websites using languages like HTML, PHP, CSS, and JavaScript. For back-end
+                development I primarily use MySQL and Python.
               </p>
             </div>
-            <!-- /.feature-about -->
+
           </div>
           <div class="col-sm-3 col-xs-6">
             <div class="feature-about">
               <div class="medium-rectangle rectangle">
-                <i class="fa fa-laptop" aria-hidden="true"></i>
+                <i class="fa fa-code-fork" aria-hidden="true"></i>
               </div>
-              <!-- /.rectangle -->
+
               <h3>SOFTWARE DEVELOPMENT</h3>
-              <p>
-                Conceiving, specifying, designing, programming, documenting, testing,
-                and debugging software components and applications to ensure optimal functionality,
-                performance, and user experience. I have experience in maintaining and updating
-                software components and applications to meet changing business needs
-                and user requirements.
+              <p>I conceive, specify, design, program, document, test, and debug software components and applications;
+                often in Java and C#. I also have experience in maintaining and updating software to adapt to changing
+                business needs and user requirements.
               </p>
             </div>
-            <!-- /.feature-about -->
+
           </div>
           <div class="col-sm-3 col-xs-6">
             <div class="feature-about">
               <div class="medium-rectangle rectangle">
-                <i class="fa fa-lock" aria-hidden="true"></i>
+                <i class="fa fa-shield" aria-hidden="true"></i>
               </div>
-              <!-- /.rectangle -->
+
               <h3>CYBER SECURITY</h3>
-              <p>
-                Implementing security protocols and measures to safeguard
-                computer systems, servers, mobile devices, electronic systems, networks, and data
-                from cyber-attacks. I can analyze security risks and vulnerabilities, and
-                implement solutions to mitigate them.
+              <p>As a cybersecurity enthusiast, I take pride in implementing security protocols and measures to
+                safeguard data from cyber-attacks. I can analyze security risks and vulnerabilities in systems,
+                implement effective solutions, and proactively monitor, identify, and eliminate threat actors.
               </p>
             </div>
-            <!-- /.feature-about -->
+
           </div>
           <div class="col-sm-3 col-xs-6">
             <div class="feature-about">
               <div class="medium-rectangle rectangle">
                 <i class="fa fa-search" aria-hidden="true"></i>
               </div>
-              <!-- /.rectangle -->
+
               <h3>DIGITAL INVESTIGATION</h3>
-              <p>
-                Identifying, collecting, examining, and analyzing data
-                while maintaining data integrity and a strict chain of custody.
-                I can investigate malware, data breaches, cyber-attacks, digital identity theft,
-                and provide technical support during legal proceedings.
+              <p>I find my strength in identifying, collecting, examining, and analyzing data while maintaining data
+                integrity and a strict chain of custody. I am well-versed in digital investigation, and can offer
+                valuable technical support conducting forensic investigations, and preparing detailed incident reports
+                for resolution and legal action.
               </p>
             </div>
-            <!-- /.feature-about -->
+
+          </div>
+        </div>
+        <div class="row">
+
+          <div class="col-sm-3 col-xs-6">
+            <div class="feature-about">
+              <div class="medium-rectangle rectangle">
+                <i class="fa fa-laptop" aria-hidden="true"></i>
+              </div>
+
+              <h3>SYSTEM ADMINISTRATION</h3>
+              <p>With expertise in Windows and Linux operating systems, I proficiently handle system administration
+                tasks; ensuring smooth installations, configurations, maintenance, and data backups. I also develop
+                comprehensive emergency response plans, and efficient backup and restoration procedures.
+              </p>
+            </div>
+
+          </div>
+          <div class="col-sm-3 col-xs-6">
+            <div class="feature-about">
+              <div class="medium-rectangle rectangle">
+                <i class="fa fa-lock" aria-hidden="true"></i>
+              </div>
+
+              <h3>NETWORK SECURITY</h3>
+              <p>I design and implement robust network security solutions, including firewalls, intrusion detection and
+                prevention systems, and conduct regular security audits.
+              </p>
+            </div>
+
+          </div>
+          <div class="col-sm-3 col-xs-6">
+            <div class="feature-about">
+              <div class="medium-rectangle rectangle">
+                <i class="fa fa-server" aria-hidden="true"></i>
+              </div>
+
+              <h3>VIRTUALIZATION</h3>
+              <p>I deploy and manage hypervisors in virtualized environments for optimized resource utilization and
+                seamless integration with physical infrastructure.
+              </p>
+            </div>
+
+          </div>
+          <div class="col-sm-3 col-xs-6">
+            <div class="feature-about">
+              <div class="medium-rectangle rectangle">
+                <i class="fa fa-cloud" aria-hidden="true"></i>
+              </div>
+
+              <h3>CLOUD MIGRATION AND MANAGEMENT</h3>
+              <p>Assisting in migrating on-premises systems to the cloud and optimizing cloud-based applications for
+                cost-effectiveness and performance.
+              </p>
+            </div>
+
           </div>
         </div>
       </div>
@@ -442,7 +499,8 @@ $noTracking = ["10.0.0.50", "173.34.41.208"]
               margin-top: 35px;
               position: relative;
             ">
-          <a href="vcard/nicolasluckie" id="contactqr"><img style="border-radius: 10px; width: 200px" src="assets/img/qr-code.svg" /></a>
+          <a href="vcard/nicolasluckie" id="contactqr"><img style="border-radius: 10px; width: 200px"
+              src="assets/img/qr-code.svg" /></a>
         </div>
         <!--<a href="mailto:nicolasluckie@gmail.com" class="btn btn-inverted" id="email">EMAIL</a>-->
       </div>
@@ -527,7 +585,9 @@ $noTracking = ["10.0.0.50", "173.34.41.208"]
     </div>
 
     <div class="container text-center">
-      <p class="copyright">&copy; <?php echo date("Y"); ?> Nicolas Luckie</p>
+      <p class="copyright">&copy;
+        <?php echo date("Y"); ?> Nicolas Luckie
+      </p>
     </div>
   </footer>
   <!-- /#footer -->
@@ -564,40 +624,40 @@ $noTracking = ["10.0.0.50", "173.34.41.208"]
   <script src="assets/js/script.js"></script>
 
   <script type="text/javascript">
-    $(document).ready(function() {
+    $(document).ready(function () {
       // Button click events
       // top navbar
-      $("#about1").click(function() {
+      $("#about1").click(function () {
         umami.track("About (top) clicked");
       });
-      $("#skills1").click(function() {
+      $("#skills1").click(function () {
         umami.track("Skills (top) clicked");
       });
-      $("#education1").click(function() {
+      $("#education1").click(function () {
         umami.track("Education (top) clicked");
       });
-      $("#contact1").click(function() {
+      $("#contact1").click(function () {
         umami.track("Contact (top) clicked");
       });
-      $("#blog1").click(function() {
+      $("#blog1").click(function () {
         umami.track("Blog (top) clicked");
       });
       // Contact section
-      $("#contactqr").click(function() {
+      $("#contactqr").click(function () {
         umami.track("Contact:QR clicked");
       });
-      $("#email").click(function() {
+      $("#email").click(function () {
         umami.track("Contact:email clicked");
       });
 
       // Client buttons
-      $("#btnRbc").click(function() {
+      $("#btnRbc").click(function () {
         umami.track("Client:RBC clicked");
       });
-      $("#btnMackBowes").click(function() {
+      $("#btnMackBowes").click(function () {
         umami.track("Client:MackBowes clicked");
       });
-      $("#btnEurofase").click(function() {
+      $("#btnEurofase").click(function () {
         umami.track("Client:Eurofase clicked");
       });
 
@@ -605,27 +665,27 @@ $noTracking = ["10.0.0.50", "173.34.41.208"]
       // $("#btnFacebook").click(function() {
       //   umami.track("Social:Facebook clicked");
       // });
-      $("#btnLinkedin").click(function() {
+      $("#btnLinkedin").click(function () {
         umami.track("Social:Linkedin clicked");
       });
-      $("#btnGithub").click(function() {
+      $("#btnGithub").click(function () {
         umami.track("Social:GitHub clicked");
       });
 
       // Bottom navbar
-      $("#about2").click(function() {
+      $("#about2").click(function () {
         umami.track("About (bottom) clicked");
       });
-      $("#skills2").click(function() {
+      $("#skills2").click(function () {
         umami.track("Skills (bottom) clicked");
       });
-      $("#education2").click(function() {
+      $("#education2").click(function () {
         umami.track("Education (bottom) clicked");
       });
-      $("#contact2").click(function() {
+      $("#contact2").click(function () {
         umami.track("Contact (bottom) clicked");
       });
-      $("#blog2").click(function() {
+      $("#blog2").click(function () {
         umami.track("Blog (bottom) clicked");
       });
     });
