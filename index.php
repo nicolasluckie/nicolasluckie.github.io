@@ -13,7 +13,7 @@ function getRealIpAddr()
   return strval($ip);
 }
 // List of IPs with tracking disabled
-$noTracking = ["10.0.0.50", "173.34.41.208"]
+$noTracking = ["10.0.0.50", "100.105.141.60", "99.246.125.252"]
   ?>
 
 <!DOCTYPE html>
@@ -145,6 +145,9 @@ $noTracking = ["10.0.0.50", "173.34.41.208"]
             </li>
             <li class="page-scroll">
               <a href="https://blog.nicolasluckie.com/" target="_blank" id="blog1">Blog</a>
+            </li>
+            <li class="page-scroll">
+              <a href="https://wiki.nicolasluckie.com/" target="_blank" id="wiki1">Wiki</a>
             </li>
           </ul>
           <!-- /.navbar-nav -->
@@ -297,8 +300,8 @@ $noTracking = ["10.0.0.50", "173.34.41.208"]
               </div>
 
               <h3>CLOUD MIGRATION AND MANAGEMENT</h3>
-              <p>Assisting in migrating on-premises systems to the cloud and optimizing cloud-based applications for
-                cost-effectiveness and performance.
+              <p>I support migrating on-premises systems to the cloud and optimizing cloud-based applications for
+                cost-effectiveness, performance, and reliability.
               </p>
             </div>
 
@@ -575,6 +578,9 @@ $noTracking = ["10.0.0.50", "173.34.41.208"]
         <li class="page-scroll">
           <a href="https://blog.nicolasluckie.com/" target="_blank" id="blog2">Blog</a>
         </li>
+        <li class="page-scroll">
+          <a href="https://wiki.nicolasluckie.com/" target="_blank" id="wiki2">Wiki</a>
+        </li>
       </ul>
 
       <div class="page-scroll">
@@ -642,6 +648,9 @@ $noTracking = ["10.0.0.50", "173.34.41.208"]
       $("#blog1").click(function () {
         umami.track("Blog (top) clicked");
       });
+      $("#wiki1").click(function () {
+        umami.track("Wiki (top) clicked");
+      });
       // Contact section
       $("#contactqr").click(function () {
         umami.track("Contact:QR clicked");
@@ -687,6 +696,9 @@ $noTracking = ["10.0.0.50", "173.34.41.208"]
       });
       $("#blog2").click(function () {
         umami.track("Blog (bottom) clicked");
+      });
+      $("#wiki2").click(function () {
+        umami.track("Wiki (bottom) clicked");
       });
     });
   </script>
