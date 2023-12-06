@@ -15,6 +15,8 @@ require_once("./db/db.inc.php");
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&family=Poppins&family=Solitreo&display=swap" rel="stylesheet">
   <!-- Stylesheet -->
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <!-- Analytics Tracking -->
+  <script async src="https://analytics.nicolasluckie.com/script.js" data-website-id="ecf90eb2-853a-43b6-a1cc-fb058e1b48e9"></script>
   <style>
     * {
       padding: 0;

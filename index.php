@@ -1,21 +1,3 @@
-<?php
-function getRealIpAddr()
-{
-  if (!empty($_SERVER['HTTP_CLIENT_IP'])) //check ip from share internet
-  {
-    $ip = $_SERVER['HTTP_CLIENT_IP'];
-  } elseif (!empty($_SERVER['HTTP_X_FORWARDED_FOR'])) //to check ip is pass from proxy
-  {
-    $ip = $_SERVER['HTTP_X_FORWARDED_FOR'];
-  } else {
-    $ip = $_SERVER['REMOTE_ADDR'];
-  }
-  return strval($ip);
-}
-// List of IPs with tracking disabled
-$noTracking = ["10.0.0.50", "100.105.141.60", "99.246.125.252"]
-  ?>
-
 <!DOCTYPE html>
 <!--
 ################################
@@ -74,14 +56,6 @@ $noTracking = ["10.0.0.50", "100.105.141.60", "99.246.125.252"]
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-
-  <!-- Tracking [DISABLED FROM LOCAL IP] -->
-  <?php
-  if (in_array(getRealIpAddr(), $noTracking) == false) {
-    echo '<script async src="https://analytics.nicolasluckie.com/script.js" data-website-id="0c0795bd-4750-45b6-bcec-ffd99748bb85"></script>';
-  }
-
-  ?>
 </head>
 
 <body>
@@ -167,18 +141,8 @@ $noTracking = ["10.0.0.50", "100.105.141.60", "99.246.125.252"]
       <div class="container"
         style="background-color: rgba(0, 0, 0, 0.5);border-radius: 15px;padding: 10px;box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.75);-webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.75);-moz-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.75);">
         <p>
-          A creative problem solver who enjoys <span>designing</span>, <span>improving</span>, and <span>automating
-            processes</span> with software-driven solutions.
-
-          <br /><br />Experienced in <span style="color: #128df9">web</span> and <span style="color: #128df9">software
-            development</span>, IT project management,
-          and supporting multiple large-scale technology projects and initiatives at various stages in the software
-          development life cycle.
-
-          <br /><br />Having always been fascinated by technology and eager to learn new things, I have learned several
-          <span style="color: #128df9">programming languages</span>, <span style="color: #128df9">applications</span>,
-          <span style="color: #128df9">platforms</span>, and <span style="color: #128df9">operating systems</span> on my
-          own initiative; and in school.
+          Creative problem solver with a background in <span>software development</span> and <span>cyber security</span>.
+          I enjoy <span style="color: #128df9">designing</span>, <span style="color: #128df9">optimizing</span>, and <span style="color: #128df9">automating</span> processes - with a passion for <span>investigations</span>.
         </p>
       </div>
     </section>
@@ -190,7 +154,7 @@ $noTracking = ["10.0.0.50", "100.105.141.60", "99.246.125.252"]
       <div class="container">
         <h2>SKILLS</h2>
         <p class="section-subtitle">
-          <span>SOME OF MY AREAS OF EXPERTISE</span>
+          <span>TECHNICAL SKILLS</span>
         </p>
         <div class="row">
           <div class="col-sm-3 col-xs-6">
@@ -199,11 +163,11 @@ $noTracking = ["10.0.0.50", "100.105.141.60", "99.246.125.252"]
                 <i class="fa fa-code" aria-hidden="true"></i>
               </div>
 
-              <h3>FULL STACK DEVELOPMENT</h3>
-              <p>As a full stack developer, I support both front-end and back-end aspects of web development. I code the
+              <h3>FULL STACK WEB DEVELOPMENT</h3>
+              <!-- <p>As a full stack developer, I support both front-end and back-end aspects of web development. I code the
                 graphical elements of websites using languages like HTML, PHP, CSS, and JavaScript. For back-end
                 development I primarily use MySQL and Python.
-              </p>
+              </p> -->
             </div>
 
           </div>
@@ -214,10 +178,10 @@ $noTracking = ["10.0.0.50", "100.105.141.60", "99.246.125.252"]
               </div>
 
               <h3>SOFTWARE DEVELOPMENT</h3>
-              <p>I conceive, specify, design, program, document, test, and debug software components and applications;
+              <!-- <p>I conceive, specify, design, program, document, test, and debug software components and applications;
                 often in Java and C#. I also have experience in maintaining and updating software to adapt to changing
                 business needs and user requirements.
-              </p>
+              </p> -->
             </div>
 
           </div>
@@ -228,10 +192,10 @@ $noTracking = ["10.0.0.50", "100.105.141.60", "99.246.125.252"]
               </div>
 
               <h3>CYBER SECURITY</h3>
-              <p>As a cybersecurity enthusiast, I take pride in implementing security protocols and measures to
+              <!-- <p>As a cybersecurity enthusiast, I take pride in implementing security protocols and measures to
                 safeguard data from cyber-attacks. I can analyze security risks and vulnerabilities in systems,
                 implement effective solutions, and proactively monitor, identify, and eliminate threat actors.
-              </p>
+              </p> -->
             </div>
 
           </div>
@@ -241,12 +205,12 @@ $noTracking = ["10.0.0.50", "100.105.141.60", "99.246.125.252"]
                 <i class="fa fa-search" aria-hidden="true"></i>
               </div>
 
-              <h3>DIGITAL INVESTIGATION</h3>
-              <p>I find my strength in identifying, collecting, examining, and analyzing data while maintaining data
+              <h3>DIGITAL FORENSICS</h3>
+              <!-- <p>I find my strength in identifying, collecting, examining, and analyzing data while maintaining data
                 integrity and a strict chain of custody. I am well-versed in digital investigation, and can offer
                 valuable technical support conducting forensic investigations, and preparing detailed incident reports
                 for resolution and legal action.
-              </p>
+              </p> -->
             </div>
 
           </div>
@@ -260,23 +224,23 @@ $noTracking = ["10.0.0.50", "100.105.141.60", "99.246.125.252"]
               </div>
 
               <h3>SYSTEM ADMINISTRATION</h3>
-              <p>With expertise in Windows and Linux operating systems, I proficiently handle system administration
+              <!-- <p>With expertise in Windows and Linux operating systems, I proficiently handle system administration
                 tasks; ensuring smooth installations, configurations, maintenance, and data backups. I also develop
                 comprehensive emergency response plans, and efficient backup and restoration procedures.
-              </p>
+              </p> -->
             </div>
 
           </div>
           <div class="col-sm-3 col-xs-6">
             <div class="feature-about">
               <div class="medium-rectangle rectangle">
-                <i class="fa fa-lock" aria-hidden="true"></i>
+                <i class="fa fa-cog" aria-hidden="true"></i>
               </div>
 
-              <h3>NETWORK SECURITY</h3>
-              <p>I design and implement robust network security solutions, including firewalls, intrusion detection and
+              <h3>SYSTEM AUTOMATION</h3>
+              <!-- <p>I design and implement robust network security solutions, including firewalls, intrusion detection and
                 prevention systems, and conduct regular security audits.
-              </p>
+              </p> -->
             </div>
 
           </div>
@@ -287,9 +251,9 @@ $noTracking = ["10.0.0.50", "100.105.141.60", "99.246.125.252"]
               </div>
 
               <h3>VIRTUALIZATION</h3>
-              <p>I deploy and manage hypervisors in virtualized environments for optimized resource utilization and
+              <!-- <p>I deploy and manage hypervisors in virtualized environments for optimized resource utilization and
                 seamless integration with physical infrastructure.
-              </p>
+              </p> -->
             </div>
 
           </div>
@@ -299,10 +263,10 @@ $noTracking = ["10.0.0.50", "100.105.141.60", "99.246.125.252"]
                 <i class="fa fa-cloud" aria-hidden="true"></i>
               </div>
 
-              <h3>CLOUD MIGRATION AND MANAGEMENT</h3>
-              <p>I support migrating on-premises systems to the cloud and optimizing cloud-based applications for
+              <h3>CLOUD COMPUTING</h3>
+              <!-- <p>I support migrating on-premises systems to the cloud and optimizing cloud-based applications for
                 cost-effectiveness, performance, and reliability.
-              </p>
+              </p> -->
             </div>
 
           </div>
@@ -515,7 +479,7 @@ $noTracking = ["10.0.0.50", "100.105.141.60", "99.246.125.252"]
     <section class="section-clients">
       <div class="container">
         <div class="text-center section-diff-title">
-          <h2>Clients I’ve Worked With</h2>
+          <h2>Clients</h2>
           <p></p>
         </div>
         <div class="row text-center">
@@ -523,7 +487,7 @@ $noTracking = ["10.0.0.50", "100.105.141.60", "99.246.125.252"]
           <a target="_blank" href="https://www.rbc.com/about-rbc.html" class="client" id="btnRbc">
             <img src="assets/img/client-3.png" class="img-responsive" alt="" /> </a><!-- /.client -->
           <!-- MacKinnon and Bowes -->
-          <a target="_blank" href="https://mackinnonandbowes.com/" class="client" id="btnMackBowes">
+          <a target="_blank" href="https://nicolasluckie.com/FIS/" class="client" id="btnMackBowes">
             <img src="assets/img/client-1.png" class="img-responsive" alt="" /> </a><!-- /.client -->
           <!-- Eurofase -->
           <a target="_blank" href="https://www.eurofase.com/" class="client" id="btnEurofase">
