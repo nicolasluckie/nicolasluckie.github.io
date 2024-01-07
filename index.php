@@ -52,8 +52,8 @@
   <link rel="stylesheet" href="assets/css/style.css?v=2" />
 
   <!-- Analytics -->
-  <script async src="https://analytics.nicolasluckie.com/script.js"
-    data-website-id="0c0795bd-4750-45b6-bcec-ffd99748bb85"></script>
+  <!-- <script async src="https://analytics.nicolasluckie.com/script.js"
+    data-website-id="0c0795bd-4750-45b6-bcec-ffd99748bb85"></script> -->
 </head>
 
 <body>
@@ -62,6 +62,7 @@
     <!-- Name & Description -->
     <div class="hero-content">
       <h1>Nic Luckie</h1>
+      <p id="debug"></p>
       <!-- <span class="blink">_</span> -->
       <p class="hero-job"><span class="typed" data-typed-items="Developer, Problem Solver, Nerd"></span></p>
       <!-- <p class="hero-job" style="margin-top: 40px">
@@ -351,13 +352,17 @@
               <div class="portfolio-item">
                 <div class="portfolio-item-thumb">
                   <img src="assets/img/portfolio-2.jpg" alt="" class="img-res">
-                  <a href="https://nicolasluckie.com/FIS/" id="FIS" class="rectangle" target="_blank">
+                  <a href="https://nicolasluckie.com/FIS/" id="FIS" class="rectangle">
                     <i class="fa fa-plus"></i>
                   </a>
                 </div><!-- /.portfolio-item-thumb  -->
                 <div class="portfolio-info">
                   <h3>Funeral Information System</h3>
-                  <p>Web Application</p>
+                  <p>
+                    A mobile-first CMS solution designed for a funeral home.
+                    <br>
+                    <a href="https://nicolasluckie.com/FIS/">Learn More</a><br><br><a href="https://github.com/nicolasluckie/" target="_blank">Follow me on GitHub <i class="fa fa-github"></i></a>
+                  </p>
                 </div><!-- /.portfolio-info  -->
               </div>
             </div><!-- /.col-md-3  -->
@@ -404,7 +409,7 @@
           <a target="_blank" href="https://www.rbc.com/about-rbc.html" class="client" id="btnRbc">
             <img src="assets/img/client-3.png" class="img-responsive" alt="" /> </a><!-- /.client -->
           <!-- MacKinnon and Bowes -->
-          <a target="_blank" href="https://nicolasluckie.com/FIS/" class="client" id="btnMackBowes">
+          <a class="client" id="btnMackBowes" style="filter: grayscale(100%);-webkit-filter: grayscale(100%);">
             <img src="assets/img/client-1.png" class="img-responsive" alt="" /> </a><!-- /.client -->
           <!-- Eurofase -->
           <a target="_blank" href="https://www.eurofase.com/" class="client" id="btnEurofase">
@@ -496,6 +501,12 @@
   <script type="text/javascript">
     $(document).ready(function () {
 
+      // Debugging feature to show the width and height of the viewport
+      // in a <p> tag located under the main page title
+      var h=$(window).height(),
+            w=$(window).width();
+        $("#debug").html("<p style='color: yellow; text-transform: none; background-color: rgba(0, 0, 0, 0.8); border-radius: 15px;'>Screen: "+w+"x"+h+"</p>");
+
       // Intro text
       var typed = $('.typed');
       if (typed.length) {
@@ -504,9 +515,9 @@
         new Typed('.typed', {
           strings: typed_strings,
           loop: true,
-          typeSpeed: 100,
-          backSpeed: 50,
-          backDelay: 2000
+          typeSpeed: 50,
+          backSpeed: 35,
+          backDelay: 1000
         });
       }
 

@@ -60,8 +60,8 @@
 		<section class="app__fulldescription app__section container">
 			<h2 class="app__section-title">Description</h2>
 			<div class="app__fulldescription-content">
-				<p>A mobile-first content management system built for a funeral home.</p>
-				<p>Key features include:</p>
+				<p>A mobile-first CMS solution designed for a funeral home.</p>
+				<p>Features include:</p>
 				<ul>
 					<li>User account log-in and management system</li>
 					<li>Custom profiles for funeral homes, hospitals, nursing homes and other institutions</li>
