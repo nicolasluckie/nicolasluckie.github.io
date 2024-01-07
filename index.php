@@ -52,8 +52,8 @@
   <link rel="stylesheet" href="assets/css/style.css?v=2" />
 
   <!-- Analytics -->
-  <!-- <script async src="https://analytics.nicolasluckie.com/script.js"
-    data-website-id="0c0795bd-4750-45b6-bcec-ffd99748bb85"></script> -->
+  <script async src="https://analytics.nicolasluckie.com/script.js"
+    data-website-id="0c0795bd-4750-45b6-bcec-ffd99748bb85"></script>
 </head>
 
 <body>
@@ -62,7 +62,7 @@
     <!-- Name & Description -->
     <div class="hero-content">
       <h1>Nic Luckie</h1>
-      <p id="debug"></p>
+      <!-- <p id="debug"></p> -->
       <!-- <span class="blink">_</span> -->
       <p class="hero-job"><span class="typed" data-typed-items="Developer, Problem Solver, Nerd"></span></p>
       <!-- <p class="hero-job" style="margin-top: 40px">
@@ -503,9 +503,8 @@
 
       // Debugging feature to show the width and height of the viewport
       // in a <p> tag located under the main page title
-      var h=$(window).height(),
-            w=$(window).width();
-        $("#debug").html("<p style='color: yellow; text-transform: none; background-color: rgba(0, 0, 0, 0.8); border-radius: 15px;'>Screen: "+w+"x"+h+"</p>");
+      //var h=$(window).height(), w=$(window).width();
+      //$("#debug").html("<p style='color: yellow; text-transform: none; background-color: rgba(0, 0, 0, 0.8); border-radius: 15px;'>Screen: "+w+"x"+h+"</p>");
 
       // Intro text
       var typed = $('.typed');
