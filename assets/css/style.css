@@ -411,7 +411,7 @@ body {
   }
   .site-navigation .navbar-collapse {
     position: relative;
-    background-color: #c01919;
+    background-color: #910000;
     z-index: 99;
     text-align: center;
     border-top: 0;
@@ -482,7 +482,6 @@ body {
 
 .hero-content .hero-job span {
   padding-bottom: 5px;
-  border-bottom: 1px solid #ffffff;
 }
 
 .hero-content .hero-job-desc {

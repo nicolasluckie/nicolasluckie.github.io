@@ -51,11 +51,9 @@
   <!-- Custom CSS -->
   <link rel="stylesheet" href="assets/css/style.css?v=2" />
 
-  <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-  <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
+  <!-- Analytics -->
+  <script async src="https://analytics.nicolasluckie.com/script.js"
+    data-website-id="0c0795bd-4750-45b6-bcec-ffd99748bb85"></script>
 </head>
 
 <body>
@@ -63,10 +61,12 @@
   <div id="top" class="hero background-overlay">
     <!-- Name & Description -->
     <div class="hero-content">
-      <h1>Nic Luckie<span class="blink">_</span></h1>
-      <p class="hero-job" style="margin-top: 40px">
+      <h1>Nic Luckie</h1>
+      <!-- <span class="blink">_</span> -->
+      <p class="hero-job"><span class="typed" data-typed-items="Developer, Problem Solver, Nerd"></span></p>
+      <!-- <p class="hero-job" style="margin-top: 40px">
         <span style="border-bottom: none">SOFTWARE DEVELOPER
-      </p>
+      </p> -->
       <!--<p class="hero-job-desc">FOR HIRE</p>-->
     </div>
     <!-- /.hero-content -->
@@ -111,7 +111,7 @@
             <!--<li class="page-scroll"><a href="#services">Services</a></li>-->
             <!--<li class="page-scroll"><a href="#team">Team</a></li>-->
             <li class="page-scroll">
-              <a href="#history" id="education1">Education</a>
+              <a href="#works" id="projects1">Projects</a>
             </li>
             <!--<li class="page-scroll"><a href="#works">Works</a></li>-->
             <li class="page-scroll">
@@ -137,12 +137,21 @@
   <!-- Main content -->
   <main id="main" class="site-main">
     <!-- Quote section -->
-    <section class="section-background section-quote background-overlay text-center" id="quote">
+    <section class="site-section section-background section-quote background-overlay text-center" id="quote">
+      <p class="section-subtitle" style="margin-bottom: 15px;">
+        <span style="color: #666;">ABOUT</span>
+      </p>
       <div class="container"
         style="background-color: rgba(0, 0, 0, 0.5);border-radius: 15px;padding: 10px;box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.75);-webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.75);-moz-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.75);">
         <p>
-          Creative problem solver with a background in <span>software development</span> and <span>cyber security</span>.
-          I enjoy <span style="color: #128df9">designing</span>, <span style="color: #128df9">optimizing</span>, and <span style="color: #128df9">automating</span> processes - with a passion for <span>investigations</span>.
+          Background in <span>software/full stack development</span>.
+        </p>
+        <p>
+          Enjoys <span style="color: #128df9">designing</span>, <span style="color: #128df9">improving</span>, and <span
+            style="color: #128df9">automating</span> processes.
+        </p>
+        <p>
+          Passionate about <span>cyber security</span> and <span>digital forensics</span>.
         </p>
       </div>
     </section>
@@ -153,122 +162,65 @@
     <section class="site-section section-about text-center" id="about">
       <div class="container">
         <h2>SKILLS</h2>
-        <p class="section-subtitle">
+        <!-- <p class="section-subtitle">
           <span>TECHNICAL SKILLS</span>
-        </p>
+        </p> -->
         <div class="row">
           <div class="col-sm-3 col-xs-6">
             <div class="feature-about">
               <div class="medium-rectangle rectangle">
                 <i class="fa fa-code" aria-hidden="true"></i>
               </div>
-
-              <h3>FULL STACK WEB DEVELOPMENT</h3>
-              <!-- <p>As a full stack developer, I support both front-end and back-end aspects of web development. I code the
-                graphical elements of websites using languages like HTML, PHP, CSS, and JavaScript. For back-end
-                development I primarily use MySQL and Python.
-              </p> -->
+              <h3>FULL STACK/SOFTWARE DEVELOPMENT</h3>
+              <p>
+                I create websites and applications for various platforms. I have experience in both front-end and
+                back-end
+                technologies, such as HTML/CSS, JavaScript, PHP, MySQL, Python and more.
+                I build responsive, secure, and user-friendly web and software applications.
+              </p>
             </div>
-
-          </div>
-          <div class="col-sm-3 col-xs-6">
-            <div class="feature-about">
-              <div class="medium-rectangle rectangle">
-                <i class="fa fa-code-fork" aria-hidden="true"></i>
-              </div>
-
-              <h3>SOFTWARE DEVELOPMENT</h3>
-              <!-- <p>I conceive, specify, design, program, document, test, and debug software components and applications;
-                often in Java and C#. I also have experience in maintaining and updating software to adapt to changing
-                business needs and user requirements.
-              </p> -->
-            </div>
-
-          </div>
-          <div class="col-sm-3 col-xs-6">
-            <div class="feature-about">
-              <div class="medium-rectangle rectangle">
-                <i class="fa fa-shield" aria-hidden="true"></i>
-              </div>
-
-              <h3>CYBER SECURITY</h3>
-              <!-- <p>As a cybersecurity enthusiast, I take pride in implementing security protocols and measures to
-                safeguard data from cyber-attacks. I can analyze security risks and vulnerabilities in systems,
-                implement effective solutions, and proactively monitor, identify, and eliminate threat actors.
-              </p> -->
-            </div>
-
-          </div>
-          <div class="col-sm-3 col-xs-6">
-            <div class="feature-about">
-              <div class="medium-rectangle rectangle">
-                <i class="fa fa-search" aria-hidden="true"></i>
-              </div>
-
-              <h3>DIGITAL FORENSICS</h3>
-              <!-- <p>I find my strength in identifying, collecting, examining, and analyzing data while maintaining data
-                integrity and a strict chain of custody. I am well-versed in digital investigation, and can offer
-                valuable technical support conducting forensic investigations, and preparing detailed incident reports
-                for resolution and legal action.
-              </p> -->
-            </div>
-
-          </div>
-        </div>
-        <div class="row">
-
-          <div class="col-sm-3 col-xs-6">
-            <div class="feature-about">
-              <div class="medium-rectangle rectangle">
-                <i class="fa fa-laptop" aria-hidden="true"></i>
-              </div>
-
-              <h3>SYSTEM ADMINISTRATION</h3>
-              <!-- <p>With expertise in Windows and Linux operating systems, I proficiently handle system administration
-                tasks; ensuring smooth installations, configurations, maintenance, and data backups. I also develop
-                comprehensive emergency response plans, and efficient backup and restoration procedures.
-              </p> -->
-            </div>
-
           </div>
           <div class="col-sm-3 col-xs-6">
             <div class="feature-about">
               <div class="medium-rectangle rectangle">
                 <i class="fa fa-cog" aria-hidden="true"></i>
               </div>
-
-              <h3>SYSTEM AUTOMATION</h3>
-              <!-- <p>I design and implement robust network security solutions, including firewalls, intrusion detection and
-                prevention systems, and conduct regular security audits.
-              </p> -->
+              <h3>AUTOMATION</h3>
+              <p>
+                I automate various tasks and processes to increase efficiency, reliability, and speed.
+                I use automation software such as Python and Ansible to automate IT operations, configuration
+                management, and deployment.
+                I use Selenium, LeanFT, and the Robot Framework to automate testing and quality assurance.
+              </p>
             </div>
-
           </div>
           <div class="col-sm-3 col-xs-6">
             <div class="feature-about">
               <div class="medium-rectangle rectangle">
                 <i class="fa fa-server" aria-hidden="true"></i>
               </div>
-
-              <h3>VIRTUALIZATION</h3>
-              <!-- <p>I deploy and manage hypervisors in virtualized environments for optimized resource utilization and
-                seamless integration with physical infrastructure.
-              </p> -->
+              <h3>CONTAINERIZATION</h3>
+              <p>
+                I have experience in using containerization to deploy applications in multiple environments.
+                I am familiar with Docker, Kubernetes, Proxmox, and other technologies that enable me to create, manage,
+                and orchestrate containers.
+              </p>
             </div>
-
           </div>
           <div class="col-sm-3 col-xs-6">
             <div class="feature-about">
               <div class="medium-rectangle rectangle">
-                <i class="fa fa-cloud" aria-hidden="true"></i>
+                <i class="fa fa-shield" aria-hidden="true"></i>
               </div>
-
-              <h3>CLOUD COMPUTING</h3>
-              <!-- <p>I support migrating on-premises systems to the cloud and optimizing cloud-based applications for
-                cost-effectiveness, performance, and reliability.
-              </p> -->
+              <h3>CYBER SECURITY</h3>
+              <p>
+                I protect systems, networks, and data from threat actors.
+                I am proficient in cybersecurity tools and techniques, such as firewalls, encryption, authentication,
+                and penetration testing.
+                I identify and mitigate cyber threats and vulnerabilities; and implement best practices and standards
+                for cybersecurity.
+              </p>
             </div>
-
           </div>
         </div>
       </div>
@@ -287,7 +239,7 @@
         <ul class="timeline">
           <!-- Timeline badge -->
           <li class="timeline-start">
-            <div class="rectangle"><span>2022</span></div>
+            <div class="rectangle"><span><i class="fa fa-stop-circle-o"></i></span></div>
           </li>
           <!-- /.timeline-start -->
 
@@ -297,7 +249,7 @@
             <div class="timeline-panel">
               <div class="timeline-heading">
                 <div class="timeline-position">
-                  <p>CERTIFICATE</p>
+                  <p style="text-transform: unset;">Humber College</p>
                 </div>
                 <!-- /.timeline-position -->
                 <div class="timeline-date">
@@ -311,10 +263,7 @@
                   <img src="assets/img/timeline-img-hc.jpg" class="img-res" alt="" />
                 </div>
                 <!-- /.timeline-body-thumb -->
-                <p>Certified Cyber Security Specialist<br /></p>
-                <p style="position: absolute; bottom: 40px; font-weight: bold">
-                  Humber College
-                </p>
+                <p>Certified Cyber Security Specialist</p>
               </div>
               <!-- /.timeline-body -->
             </div>
@@ -332,7 +281,7 @@
                 </div>
                 <!-- /.timeline-date -->
                 <div class="timeline-position">
-                  <p>DIPLOMA</p>
+                  <p style="text-transform: unset;">Durham College</p>
                 </div>
                 <!-- /.timeline-position -->
               </div>
@@ -342,65 +291,7 @@
                   <img src="assets/img/timeline-img-dc.jpg" class="img-res" alt="" />
                 </div>
                 <!-- /.timeline-body-thumb -->
-                <p>Protection, Security, and Investigations<br /></p>
-                <p style="position: absolute; bottom: 40px; font-weight: bold">
-                  Durham College
-                </p>
-              </div>
-              <!-- /.timeline-body -->
-            </div>
-            <!-- /.timeline-panel -->
-          </li>
-
-          <!-- Timeline job & description, inverted  -->
-          <li class="timeline-inverted" style="display: none">
-            <div class="rectangle timeline-rectangle"></div>
-            <div class="timeline-panel">
-              <div class="timeline-heading">
-                <div class="timeline-position">
-                  <p>ONTARIO SECURITY GUARD</p>
-                </div>
-                <!-- /.timeline-position -->
-                <div class="timeline-date">
-                  <p>2020</p>
-                </div>
-                <!-- /.timeline-date -->
-              </div>
-              <!-- /.timeline-heading -->
-              <div class="timeline-body">
-                <div class="timeline-body-thumb">
-                  <img src="assets/img/timeline-img-sg.jpg" class="img-res" alt="" />
-                </div>
-                <!-- /.timeline-body-thumb -->
-                <p>Ministry of the Solicitor General</p>
-              </div>
-              <!-- /.timeline-body -->
-            </div>
-            <!-- /.timeline-panel -->
-          </li>
-          <!-- /.timeline-inverted -->
-
-          <!-- Timeline job & description  -->
-          <li style="display: none">
-            <div class="rectangle timeline-rectangle"></div>
-            <div class="timeline-panel">
-              <div class="timeline-heading">
-                <div class="timeline-date">
-                  <p>2018</p>
-                </div>
-                <!-- /.timeline-date -->
-                <div class="timeline-position">
-                  <p>Standard First Aid CPR/AED Level C</p>
-                </div>
-                <!-- /.timeline-position -->
-              </div>
-              <!-- /.timeline-heading -->
-              <div class="timeline-body">
-                <div class="timeline-body-thumb">
-                  <img src="assets/img/timeline-img-rc.jpg" class="img-res" alt="" />
-                </div>
-                <!-- /.timeline-body-thumb -->
-                <p>Canadian Red Cross Certification</p>
+                <p>Protection, Security, and Investigations</p>
               </div>
               <!-- /.timeline-body -->
             </div>
@@ -413,7 +304,7 @@
             <div class="timeline-panel">
               <div class="timeline-heading">
                 <div class="timeline-position">
-                  <p>DIPLOMA</p>
+                  <p style="text-transform: unset;">Sheridan College</p>
                 </div>
                 <!-- /.timeline-position -->
                 <div class="timeline-date">
@@ -427,10 +318,7 @@
                   <img src="assets/img/timeline-img-sc.jpg" class="img-res" alt="" />
                 </div>
                 <!-- /.timeline-body-thumb -->
-                <p>Computer Programming<br /></p>
-                <p style="position: absolute; bottom: 40px; font-weight: bold">
-                  Sheridan College
-                </p>
+                <p>Computer Programming</p>
               </div>
               <!-- /.timeline-body -->
             </div>
@@ -440,7 +328,7 @@
 
           <!-- Timeline Badge  -->
           <li class="timeline-end">
-            <div class="rectangle"><span>2017</span></div>
+            <div class="rectangle"><span><i class="fa fa-circle"></i></span></div>
           </li>
           <!-- /.timeline-end -->
         </ul>
@@ -450,6 +338,35 @@
     <!-- /.section-history -->
     <!-- End History section -->
 
+    <!-- Portfolio/Works section -->
+    <section class="site-section section-works" id="works">
+      <div class="container">
+        <h2>PROJECTS</h2>
+        <!-- <p class="section-subtitle"><span>Subtitle</span></p> -->
+
+        <div class="portfolio">
+          <!-- Portfolio item -->
+          <div class="row">
+            <div style="float: none; margin: 0 auto;" class="col-md-6 col-sm-6 col-xs-6" data-groups='["webdev"]'>
+              <div class="portfolio-item">
+                <div class="portfolio-item-thumb">
+                  <img src="assets/img/portfolio-2.jpg" alt="" class="img-res">
+                  <a href="https://nicolasluckie.com/FIS/" id="FIS" class="rectangle" target="_blank">
+                    <i class="fa fa-plus"></i>
+                  </a>
+                </div><!-- /.portfolio-item-thumb  -->
+                <div class="portfolio-info">
+                  <h3>Funeral Information System</h3>
+                  <p>Web Application</p>
+                </div><!-- /.portfolio-info  -->
+              </div>
+            </div><!-- /.col-md-3  -->
+          </div>
+        </div>
+      </div>
+    </section><!-- /.section-works -->
+    <!-- End Works section -->
+
     <!-- GitHub section -->
     <section class="section-background section-twitter background-overlay text-center" id="contact">
       <div class="container">
@@ -457,7 +374,7 @@
           <i class="fa fa-envelope"></i>
         </div>-->
         <div class="text-center section-diff-title">
-          <h2 style="color: white;">Contact Me</h2>
+          <h2 style="color: white; z-index: 1000;">CONTACT</h2>
           <!--<p>This my Education and Experience</p>-->
         </div>
         <div class="text-center" style="
@@ -479,7 +396,7 @@
     <section class="section-clients">
       <div class="container">
         <div class="text-center section-diff-title">
-          <h2>Clients</h2>
+          <h2>CLIENTS</h2>
           <p></p>
         </div>
         <div class="row text-center">
@@ -505,10 +422,10 @@
         <!-- <a target="_blank" href="https://www.facebook.com/nicolasluckie" id="btnFacebook">
           <i class="fa fa-facebook"></i>
         </a> -->
-        <a target="_blank" href="https://www.linkedin.com/in/nicolasluckie" id="btnLinkedin">
+        <a class="rectangle" target="_blank" href="https://www.linkedin.com/in/nicolasluckie" id="btnLinkedin">
           <i class="fa fa-linkedin"></i>
         </a>
-        <a target="_blank" href="https://github.com/nicolasluckie" id="btnGithub">
+        <a class="rectangle" target="_blank" href="https://github.com/nicolasluckie" id="btnGithub">
           <i class="fa fa-github"></i>
         </a>
       </div>
@@ -530,10 +447,9 @@
         <li class="page-scroll">
           <a href="#about" id="skills2">Skills</a>
         </li>
-        <!--<li class="page-scroll"><a href="#services">Services</a></li>-->
         <!--<li class="page-scroll"><a href="#team">Team</a></li>-->
         <li class="page-scroll">
-          <a href="#history" id="education2">Education</a>
+          <a href="#works" id="projects2">Projects</a>
         </li>
         <!--<li class="page-scroll"><a href="#works">Works</a></li>-->
         <li class="page-scroll">
@@ -563,48 +479,46 @@
   <!-- /#footer -->
   <!-- End Footer -->
 
-  <!-- Bootstrap core JavaScript
-    ================================================== -->
-  <!-- Placed at the end of the document so the pages load faster -->
-  <!-- jQuery core js | Do not Delete -->
+  <!-- Vendor JS Files -->
   <script src="assets/js/jquery.min.js"></script>
-
-  <!-- Bootstrap core js | Do not Delete -->
   <script src="assets/js/bootstrap.min.js"></script>
-
-  <!-- Bootstrap progressbar JS -->
   <script src="assets/js/bootstrap-progressbar.min.js"></script>
-
-  <!-- Count To JS -->
   <script src="assets/js/jquery.countTo.min.js"></script>
-
-  <!-- Easing JS -->
   <script src="assets/js/jquery.easing.min.js"></script>
-
-  <!-- Shuffle JS -->
   <script src="assets/js/jquery.shuffle.min.js"></script>
-
-  <!-- Slick Carousel JS -->
   <script src="assets/js/slick.min.js"></script>
-
-  <!-- Touchswipe JS -->
   <script src="assets/js/touchswipe.min.js"></script>
+  <script src="assets/js/typed.js/typed.umd.js"></script>
 
   <!-- Custom JS -->
   <script src="assets/js/script.js"></script>
 
   <script type="text/javascript">
     $(document).ready(function () {
+
+      // Intro text
+      var typed = $('.typed');
+      if (typed.length) {
+        var typed_strings = typed.data('typed-items');
+        typed_strings = typed_strings.split(',');
+        new Typed('.typed', {
+          strings: typed_strings,
+          loop: true,
+          typeSpeed: 100,
+          backSpeed: 50,
+          backDelay: 2000
+        });
+      }
+
       // Button click events
-      // top navbar
       $("#about1").click(function () {
         umami.track("About (top) clicked");
       });
       $("#skills1").click(function () {
         umami.track("Skills (top) clicked");
       });
-      $("#education1").click(function () {
-        umami.track("Education (top) clicked");
+      $("#projects1").click(function () {
+        umami.track("Projects (top) clicked");
       });
       $("#contact1").click(function () {
         umami.track("Contact (top) clicked");
@@ -621,6 +535,9 @@
       });
       $("#email").click(function () {
         umami.track("Contact:email clicked");
+      });
+      $("#FIS").click(function () {
+        umami.track("Projects: FIS clicked");
       });
 
       // Client buttons
@@ -652,8 +569,8 @@
       $("#skills2").click(function () {
         umami.track("Skills (bottom) clicked");
       });
-      $("#education2").click(function () {
-        umami.track("Education (bottom) clicked");
+      $("#projects2").click(function () {
+        umami.track("Projects (bottom) clicked");
       });
       $("#contact2").click(function () {
         umami.track("Contact (bottom) clicked");

@@ -59,15 +59,15 @@ $(function () {
         });
     }
     
-    $(document).bind('scroll', function(ev) {
-        var scrollOffset = $(document).scrollTop();
-        var containerOffset = $section.offset().top - window.innerHeight;
-        if (scrollOffset > containerOffset) {
-            loadDaBars();
-            // unbind event not to load scrolsl again
-            $(document).unbind('scroll');
-        }
-    });
+    // $(document).bind('scroll', function(ev) {
+    //     var scrollOffset = $(document).scrollTop();
+    //     var containerOffset = $section.offset().top - window.innerHeight;
+    //     if (scrollOffset > containerOffset) {
+    //         loadDaBars();
+    //         // unbind event not to load scrolsl again
+    //         $(document).unbind('scroll');
+    //     }
+    // });
 
 //Team Carousel
     $('#services-carousel').carousel({ interval: false });
