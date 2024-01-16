@@ -62,7 +62,7 @@
     <!-- Name & Description -->
     <div class="hero-content">
       <h1>Nic Luckie</h1>
-      <!-- <p id="debug"></p> -->
+      <!--<p id="debug"></p>-->
       <!-- <span class="blink">_</span> -->
       <p class="hero-job"><span class="typed" data-typed-items="Developer, Problem Solver, Nerd"></span></p>
       <!-- <p class="hero-job" style="margin-top: 40px">
@@ -145,14 +145,10 @@
       <div class="container"
         style="background-color: rgba(0, 0, 0, 0.5);border-radius: 15px;padding: 10px;box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.75);-webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.75);-moz-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.75);">
         <p>
-          Background in <span>software/full stack development</span>.
-        </p>
-        <p>
-          Enjoys <span style="color: #128df9">designing</span>, <span style="color: #128df9">improving</span>, and <span
-            style="color: #128df9">automating</span> processes.
-        </p>
-        <p>
-          Passionate about <span>cyber security</span> and <span>digital forensics</span>.
+          Background in <span>software/full stack development</span>. Enjoys <span
+            style="color: #128df9">designing</span>, <span style="color: #128df9">improving</span>, and <span
+            style="color: #128df9">automating</span> processes. Passionate about <span>cyber security</span> and
+          <span>digital forensics</span>.
         </p>
       </div>
     </section>
@@ -240,78 +236,23 @@
         <ul class="timeline">
           <!-- Timeline badge -->
           <li class="timeline-start">
-            <div class="rectangle"><span><i class="fa fa-stop-circle-o"></i></span></div>
+            <div class="rectangle"><span><i class="fa fa-circle"></i></span></div>
           </li>
           <!-- /.timeline-start -->
 
-          <!-- Timeline job & description, inverted  -->
-          <li class="timeline-inverted">
-            <div class="rectangle timeline-rectangle"></div>
-            <div class="timeline-panel">
-              <div class="timeline-heading">
-                <div class="timeline-position">
-                  <p style="text-transform: unset;">Humber College</p>
-                </div>
-                <!-- /.timeline-position -->
-                <div class="timeline-date">
-                  <p>2022</p>
-                </div>
-                <!-- /.timeline-date -->
-              </div>
-              <!-- /.timeline-heading -->
-              <div class="timeline-body">
-                <div class="timeline-body-thumb">
-                  <img src="assets/img/timeline-img-hc.jpg" class="img-res" alt="" />
-                </div>
-                <!-- /.timeline-body-thumb -->
-                <p>Certified Cyber Security Specialist</p>
-              </div>
-              <!-- /.timeline-body -->
-            </div>
-            <!-- /.timeline-panel -->
-          </li>
-          <!-- /.timeline-inverted -->
-
-          <!-- Timeline job & description  -->
+          <!-- Timeline-Left  -->
           <li>
             <div class="rectangle timeline-rectangle"></div>
             <div class="timeline-panel">
               <div class="timeline-heading">
                 <div class="timeline-date">
-                  <p>2020</p>
+                  <p>2017</p>
                 </div>
                 <!-- /.timeline-date -->
-                <div class="timeline-position">
-                  <p style="text-transform: unset;">Durham College</p>
-                </div>
-                <!-- /.timeline-position -->
-              </div>
-              <!-- /.timeline-heading -->
-              <div class="timeline-body">
-                <div class="timeline-body-thumb">
-                  <img src="assets/img/timeline-img-dc.jpg" class="img-res" alt="" />
-                </div>
-                <!-- /.timeline-body-thumb -->
-                <p>Protection, Security, and Investigations</p>
-              </div>
-              <!-- /.timeline-body -->
-            </div>
-            <!-- /.timeline-panel -->
-          </li>
-
-          <!-- Timeline job & description, inverted  -->
-          <li class="timeline-inverted">
-            <div class="rectangle timeline-rectangle"></div>
-            <div class="timeline-panel">
-              <div class="timeline-heading">
                 <div class="timeline-position">
                   <p style="text-transform: unset;">Sheridan College</p>
                 </div>
                 <!-- /.timeline-position -->
-                <div class="timeline-date">
-                  <p>2017</p>
-                </div>
-                <!-- /.timeline-date -->
               </div>
               <!-- /.timeline-heading -->
               <div class="timeline-body">
@@ -325,11 +266,67 @@
             </div>
             <!-- /.timeline-panel -->
           </li>
-          <!-- /.timeline-inverted -->
+          <!-- /.timeline-left -->
+
+          <!-- Timeline-Right  -->
+          <li class="timeline-inverted">
+            <div class="rectangle timeline-rectangle"></div>
+            <div class="timeline-panel">
+              <div class="timeline-heading">
+                <div class="timeline-position">
+                  <p style="text-transform: unset;">Durham College</p>
+                </div>
+                <!-- /.timeline-position -->
+                <div class="timeline-date">
+                  <p>2020</p>
+                </div>
+                <!-- /.timeline-date -->
+              </div>
+              <!-- /.timeline-heading -->
+              <div class="timeline-body">
+                <div class="timeline-body-thumb">
+                  <img src="assets/img/timeline-img-dc.jpg" class="img-res" alt="" />
+                </div>
+                <!-- /.timeline-body-thumb -->
+                <p>Protection, Security, and Investigations</p>
+              </div>
+              <!-- /.timeline-body -->
+            </div>
+            <!-- /.timeline-panel -->
+          </li>
+          <!-- /.timeline-right -->
+
+          <!-- Timeline-Left  -->
+          <li>
+            <div class="rectangle timeline-rectangle"></div>
+            <div class="timeline-panel">
+              <div class="timeline-heading">
+                <div class="timeline-date">
+                  <p>2022</p>
+                </div>
+                <!-- /.timeline-date -->
+                <div class="timeline-position">
+                  <p style="text-transform: unset;">Humber College</p>
+                </div>
+                <!-- /.timeline-position -->
+              </div>
+              <!-- /.timeline-heading -->
+              <div class="timeline-body">
+                <div class="timeline-body-thumb">
+                  <img src="assets/img/timeline-img-hc.jpg" class="img-res" alt="" />
+                </div>
+                <!-- /.timeline-body-thumb -->
+                <p>Certified Cyber Security Specialist</p>
+              </div>
+              <!-- /.timeline-body -->
+            </div>
+            <!-- /.timeline-panel -->
+          </li>
+          <!-- /.timeline-left -->
 
           <!-- Timeline Badge  -->
           <li class="timeline-end">
-            <div class="rectangle"><span><i class="fa fa-circle"></i></span></div>
+            <div class="rectangle"><span><i class="fa fa-stop-circle-o"></i></span></div>
           </li>
           <!-- /.timeline-end -->
         </ul>
@@ -345,29 +342,57 @@
         <h2>PROJECTS</h2>
         <!-- <p class="section-subtitle"><span>Subtitle</span></p> -->
 
+        <!-- Portfolio -->
         <div class="portfolio">
-          <!-- Portfolio item -->
-          <div class="row">
-            <div style="float: none; margin: 0 auto;" class="col-md-6 col-sm-6 col-xs-6" data-groups='["webdev"]'>
+
+          <!-- Portfolio sorting -->
+          <ul class="portfolio-sorting list-inline">
+            <li><a href="#" class=" active" data-group="all">all</a></li>
+            <li><a href="#" class="" data-group="desktopapps">Desktop Apps</a></li>
+            <li><a href="#" class="" data-group="webdev">Web Apps</a></li>
+            <!-- <li><a href="#" class="" data-group="mobileapps">Mobile apps</a></li> -->
+          </ul><!-- /.portfolio-sorting  -->
+
+          <!-- grid | 4-columns="col-md-3 col-sm-4 col-xs-6" 2-columns="col-md-6 col-sm-8 col-xs-12 -->
+          <div id="grid" class="shuffle">
+
+            <!-- Portfolio item" -->
+            <div class="col-md-6 col-sm-8 col-xs-12 shuffle-item filtered" data-groups="[&quot;desktopapps&quot;]">
               <div class="portfolio-item">
                 <div class="portfolio-item-thumb">
-                  <img src="assets/img/portfolio-2.jpg" alt="" class="img-res">
-                  <a href="https://nicolasluckie.com/FIS/" id="FIS" class="rectangle">
+                  <img src="assets/img/portfolio-1.jpg" alt="" class="img-res">
+                  <a href="https://github.com/nicolasluckie/streamdeck-gpu" id="gpu" class="rectangle" target="_blank">
                     <i class="fa fa-plus"></i>
                   </a>
                 </div><!-- /.portfolio-item-thumb  -->
                 <div class="portfolio-info">
-                  <h3>Funeral Information System</h3>
-                  <p>
-                    A mobile-first CMS solution designed for a funeral home.
-                    <br>
-                    <a href="https://nicolasluckie.com/FIS/">Learn More</a><br><br><a href="https://github.com/nicolasluckie/" target="_blank">Follow me on GitHub <i class="fa fa-github"></i></a>
-                  </p>
+                  <a href="https://github.com/nicolasluckie/streamdeck-gpu" target="_blank" id="gpu2"><h3>streamdeck-gpu</h3></a>
+                  <p>A Stream Deck plugin that displays the current GPU temperature.</p>
                 </div><!-- /.portfolio-info  -->
               </div>
             </div><!-- /.col-md-3  -->
-          </div>
+
+            <!-- Portfolio item -->
+            <div class="col-md-6 col-sm-8 col-xs-12 shuffle-item filtered" data-groups="[&quot;webdev&quot;]">
+              <div class="portfolio-item">
+                <div class="portfolio-item-thumb">
+                  <img src="assets/img/portfolio-2.jpg" alt="" class="img-res">
+                  <a href="https://nicolasluckie.com/FIS/" id="fis" class="rectangle" target="_blank">
+                    <i class="fa fa-plus"></i>
+                  </a>
+                </div><!-- /.portfolio-item-thumb  -->
+                <div class="portfolio-info">
+                  <a href="https://nicolasluckie.com/FIS/" target="_blank" id="fis2"><h3>Funeral Information System</h3></a>
+                  <p>A mobile-first CMS solution designed for a funeral home.</p>
+                </div><!-- /.portfolio-info  -->
+              </div>
+            </div><!-- /.col-md-3  -->
+
+          </div><!-- /#grid -->
+
         </div>
+        <!-- /.portfolio -->
+
       </div>
     </section><!-- /.section-works -->
     <!-- End Works section -->
@@ -503,6 +528,7 @@
 
       // Debugging feature to show the width and height of the viewport
       // in a <p> tag located under the main page title
+
       //var h=$(window).height(), w=$(window).width();
       //$("#debug").html("<p style='color: yellow; text-transform: none; background-color: rgba(0, 0, 0, 0.8); border-radius: 15px;'>Screen: "+w+"x"+h+"</p>");
 
@@ -539,15 +565,24 @@
       $("#wiki1").click(function () {
         umami.track("Wiki (top) clicked");
       });
+
+      // Project section
+      $("#gpu").click(function () {
+        umami.track("Projects: streamdeck-gpu clicked");
+      });
+      $("#gpu2").click(function () {
+        umami.track("Projects: streamdeck-gpu clicked");
+      });
+      $("#fis").click(function () {
+        umami.track("Projects: FIS clicked");
+      });
+      $("#fis2").click(function () {
+        umami.track("Projects: FIS clicked");
+      });
+
       // Contact section
       $("#contactqr").click(function () {
         umami.track("Contact:QR clicked");
-      });
-      $("#email").click(function () {
-        umami.track("Contact:email clicked");
-      });
-      $("#FIS").click(function () {
-        umami.track("Projects: FIS clicked");
       });
 
       // Client buttons
@@ -562,9 +597,6 @@
       });
 
       // Social buttons
-      // $("#btnFacebook").click(function() {
-      //   umami.track("Social:Facebook clicked");
-      // });
       $("#btnLinkedin").click(function () {
         umami.track("Social:Linkedin clicked");
       });
