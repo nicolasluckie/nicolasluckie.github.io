@@ -52,8 +52,7 @@
   <link rel="stylesheet" href="assets/css/style.css?v=2" />
 
   <!-- Analytics -->
-  <script async src="https://analytics.nicolasluckie.com/script.js"
-    data-website-id="0c0795bd-4750-45b6-bcec-ffd99748bb85"></script>
+  <script async src="https://analytics.nicolasluckie.com/script.js" data-website-id="fb4a75a5-dce7-4dc5-bb1a-159be3e82ae1"></script>
 </head>
 
 <body>
