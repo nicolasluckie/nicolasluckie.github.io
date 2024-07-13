@@ -1,0 +1,14 @@
+services:
+  nginx:
+    image: lscr.io/linuxserver/nginx
+    container_name: site-nicolasluckie
+    restart: unless-stopped
+    volumes:
+      - ./config:/config
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=America/Toronto
+    ports:
+      - 80:80
+      - 443:443
