@@ -16,11 +16,11 @@
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-  <title id="title">Nic Luckie</title>
+  <title id="title">Nicolas Luckie</title>
 
-  <meta name="description" content="" />
-  <meta name="author" content="" />
-  <meta name="keywords" content="" />
+  <meta name="description" content="Nicolas Luckie" />
+  <meta name="author" content="Nicolas Luckie" />
+  <meta name="keywords" content="Nicolas Luckie" />
 
   <!-- Mobile Specific Metas
     ================================================== -->
@@ -52,7 +52,8 @@
   <link rel="stylesheet" href="assets/css/style.css?v=2" />
 
   <!-- Analytics -->
-  <script async src="https://analytics.nicolasluckie.com/script.js" data-website-id="fb4a75a5-dce7-4dc5-bb1a-159be3e82ae1"></script>
+  <script async src="https://analytics.nicolasluckie.com/script.js"
+    data-website-id="fb4a75a5-dce7-4dc5-bb1a-159be3e82ae1"></script>
 </head>
 
 <body>
@@ -104,16 +105,9 @@
             <li class="page-scroll">
               <a href="#main" id="about1">About</a>
             </li>
-            <!--<li class="page-scroll"><a href="#intro">Intro</a></li>-->
-            <li class="page-scroll">
-              <a href="#about" id="skills1">Skills</a>
-            </li>
-            <!--<li class="page-scroll"><a href="#services">Services</a></li>-->
-            <!--<li class="page-scroll"><a href="#team">Team</a></li>-->
             <li class="page-scroll">
               <a href="#works" id="projects1">Projects</a>
             </li>
-            <!--<li class="page-scroll"><a href="#works">Works</a></li>-->
             <li class="page-scroll">
               <a href="#contact" id="contact1">Contact</a>
             </li>
@@ -154,75 +148,70 @@
     <!-- /.section-quote -->
     <!-- End Quote section -->
 
-    <!-- About section -->
-    <section class="site-section section-about text-center" id="about">
+    <!-- Portfolio/Works section -->
+    <section class="site-section section-works" id="works">
       <div class="container">
-        <h2>SKILLS</h2>
-        <!-- <p class="section-subtitle">
-          <span>TECHNICAL SKILLS</span>
-        </p> -->
-        <div class="row">
-          <div class="col-sm-3 col-xs-6">
-            <div class="feature-about">
-              <div class="medium-rectangle rectangle">
-                <i class="fa fa-code" aria-hidden="true"></i>
+        <h2>PROJECTS</h2>
+        <!-- <p class="section-subtitle"><span>Subtitle</span></p> -->
+
+        <!-- Portfolio -->
+        <div class="portfolio">
+
+          <!-- Portfolio sorting -->
+          <ul class="portfolio-sorting list-inline">
+            <li><a href="#" class=" active" data-group="all">all</a></li>
+            <li><a href="#" class="" data-group="desktopapps">Desktop Apps</a></li>
+            <li><a href="#" class="" data-group="webdev">Web Apps</a></li>
+            <!-- <li><a href="#" class="" data-group="mobileapps">Mobile apps</a></li> -->
+          </ul><!-- /.portfolio-sorting  -->
+
+          <!-- grid | 4-columns="col-md-3 col-sm-4 col-xs-6" 2-columns="col-md-6 col-sm-8 col-xs-12 -->
+          <div id="grid" class="shuffle">
+
+            <!-- Portfolio item" -->
+            <div class="col-md-6 col-sm-8 col-xs-12 shuffle-item filtered" data-groups="[&quot;desktopapps&quot;]">
+              <div class="portfolio-item">
+                <div class="portfolio-item-thumb">
+                  <img src="assets/img/portfolio-1.jpg" alt="" class="img-res">
+                  <a href="https://github.com/nicolasluckie/streamdeck-gpu" id="gpu" class="rectangle" target="_blank">
+                    <i class="fa fa-plus"></i>
+                  </a>
+                </div><!-- /.portfolio-item-thumb  -->
+                <div class="portfolio-info">
+                  <a href="https://github.com/nicolasluckie/streamdeck-gpu" target="_blank" id="gpu2">
+                    <h3>streamdeck-gpu</h3>
+                  </a>
+                  <p>A Stream Deck plugin that displays the current GPU temperature.</p>
+                </div><!-- /.portfolio-info  -->
               </div>
-              <h3>FULL STACK/SOFTWARE DEVELOPMENT</h3>
-              <p>
-                I create websites and applications for various platforms. I have experience in both front-end and
-                back-end
-                technologies, such as HTML/CSS, JavaScript, PHP, MySQL, Python and more.
-                I build responsive, secure, and user-friendly web and software applications.
-              </p>
-            </div>
-          </div>
-          <div class="col-sm-3 col-xs-6">
-            <div class="feature-about">
-              <div class="medium-rectangle rectangle">
-                <i class="fa fa-cog" aria-hidden="true"></i>
+            </div><!-- /.col-md-3  -->
+
+            <!-- Portfolio item -->
+            <div class="col-md-6 col-sm-8 col-xs-12 shuffle-item filtered" data-groups="[&quot;webdev&quot;]">
+              <div class="portfolio-item">
+                <div class="portfolio-item-thumb">
+                  <img src="assets/img/portfolio-2.jpg" alt="" class="img-res">
+                  <a href="https://nicolasluckie.com/FIS/" id="fis" class="rectangle" target="_blank">
+                    <i class="fa fa-plus"></i>
+                  </a>
+                </div><!-- /.portfolio-item-thumb  -->
+                <div class="portfolio-info">
+                  <a href="https://nicolasluckie.com/FIS/" target="_blank" id="fis2">
+                    <h3>Funeral Information System</h3>
+                  </a>
+                  <p>A mobile-first CMS solution designed for a funeral home.</p>
+                </div><!-- /.portfolio-info  -->
               </div>
-              <h3>AUTOMATION</h3>
-              <p>
-                I automate various tasks and processes to increase efficiency, reliability, and speed.
-                I use automation software such as Python and Ansible to automate IT operations, configuration
-                management, and deployment.
-                I use Selenium, LeanFT, and the Robot Framework to automate testing and quality assurance.
-              </p>
-            </div>
-          </div>
-          <div class="col-sm-3 col-xs-6">
-            <div class="feature-about">
-              <div class="medium-rectangle rectangle">
-                <i class="fa fa-server" aria-hidden="true"></i>
-              </div>
-              <h3>CONTAINERIZATION</h3>
-              <p>
-                I have experience in using containerization to deploy applications in multiple environments.
-                I am familiar with Docker, Kubernetes, Proxmox, and other technologies that enable me to create, manage,
-                and orchestrate containers.
-              </p>
-            </div>
-          </div>
-          <div class="col-sm-3 col-xs-6">
-            <div class="feature-about">
-              <div class="medium-rectangle rectangle">
-                <i class="fa fa-shield" aria-hidden="true"></i>
-              </div>
-              <h3>CYBER SECURITY</h3>
-              <p>
-                I protect systems, networks, and data from threat actors.
-                I am proficient in cybersecurity tools and techniques, such as firewalls, encryption, authentication,
-                and penetration testing.
-                I identify and mitigate cyber threats and vulnerabilities; and implement best practices and standards
-                for cybersecurity.
-              </p>
-            </div>
-          </div>
+            </div><!-- /.col-md-3  -->
+
+          </div><!-- /#grid -->
+
         </div>
+        <!-- /.portfolio -->
+
       </div>
-    </section>
-    <!-- /.section-about -->
-    <!-- End About section -->
+    </section><!-- /.section-works -->
+    <!-- End Works section -->
 
     <!-- History section -->
     <section class="section-history" id="history">
@@ -245,21 +234,21 @@
             <div class="timeline-panel">
               <div class="timeline-heading">
                 <div class="timeline-date">
-                  <p>2017</p>
+                  <p>2022</p>
                 </div>
                 <!-- /.timeline-date -->
                 <div class="timeline-position">
-                  <p style="text-transform: unset;">Sheridan College</p>
+                  <p style="text-transform: unset;">Humber College</p>
                 </div>
                 <!-- /.timeline-position -->
               </div>
               <!-- /.timeline-heading -->
               <div class="timeline-body">
                 <div class="timeline-body-thumb">
-                  <img src="assets/img/timeline-img-sc.jpg" class="img-res" alt="" />
+                  <img src="assets/img/timeline-img-hc.jpg" class="img-res" alt="" />
                 </div>
                 <!-- /.timeline-body-thumb -->
-                <p>Computer Programming</p>
+                <p>Certified Cyber Security Specialist</p>
               </div>
               <!-- /.timeline-body -->
             </div>
@@ -301,21 +290,21 @@
             <div class="timeline-panel">
               <div class="timeline-heading">
                 <div class="timeline-date">
-                  <p>2022</p>
+                  <p>2017</p>
                 </div>
                 <!-- /.timeline-date -->
                 <div class="timeline-position">
-                  <p style="text-transform: unset;">Humber College</p>
+                  <p style="text-transform: unset;">Sheridan College</p>
                 </div>
                 <!-- /.timeline-position -->
               </div>
               <!-- /.timeline-heading -->
               <div class="timeline-body">
                 <div class="timeline-body-thumb">
-                  <img src="assets/img/timeline-img-hc.jpg" class="img-res" alt="" />
+                  <img src="assets/img/timeline-img-sc.jpg" class="img-res" alt="" />
                 </div>
                 <!-- /.timeline-body-thumb -->
-                <p>Certified Cyber Security Specialist</p>
+                <p>Computer Programming</p>
               </div>
               <!-- /.timeline-body -->
             </div>
@@ -335,76 +324,11 @@
     <!-- /.section-history -->
     <!-- End History section -->
 
-    <!-- Portfolio/Works section -->
-    <section class="site-section section-works" id="works">
-      <div class="container">
-        <h2>PROJECTS</h2>
-        <!-- <p class="section-subtitle"><span>Subtitle</span></p> -->
-
-        <!-- Portfolio -->
-        <div class="portfolio">
-
-          <!-- Portfolio sorting -->
-          <ul class="portfolio-sorting list-inline">
-            <li><a href="#" class=" active" data-group="all">all</a></li>
-            <li><a href="#" class="" data-group="desktopapps">Desktop Apps</a></li>
-            <li><a href="#" class="" data-group="webdev">Web Apps</a></li>
-            <!-- <li><a href="#" class="" data-group="mobileapps">Mobile apps</a></li> -->
-          </ul><!-- /.portfolio-sorting  -->
-
-          <!-- grid | 4-columns="col-md-3 col-sm-4 col-xs-6" 2-columns="col-md-6 col-sm-8 col-xs-12 -->
-          <div id="grid" class="shuffle">
-
-            <!-- Portfolio item" -->
-            <div class="col-md-6 col-sm-8 col-xs-12 shuffle-item filtered" data-groups="[&quot;desktopapps&quot;]">
-              <div class="portfolio-item">
-                <div class="portfolio-item-thumb">
-                  <img src="assets/img/portfolio-1.jpg" alt="" class="img-res">
-                  <a href="https://github.com/nicolasluckie/streamdeck-gpu" id="gpu" class="rectangle" target="_blank">
-                    <i class="fa fa-plus"></i>
-                  </a>
-                </div><!-- /.portfolio-item-thumb  -->
-                <div class="portfolio-info">
-                  <a href="https://github.com/nicolasluckie/streamdeck-gpu" target="_blank" id="gpu2"><h3>streamdeck-gpu</h3></a>
-                  <p>A Stream Deck plugin that displays the current GPU temperature.</p>
-                </div><!-- /.portfolio-info  -->
-              </div>
-            </div><!-- /.col-md-3  -->
-
-            <!-- Portfolio item -->
-            <div class="col-md-6 col-sm-8 col-xs-12 shuffle-item filtered" data-groups="[&quot;webdev&quot;]">
-              <div class="portfolio-item">
-                <div class="portfolio-item-thumb">
-                  <img src="assets/img/portfolio-2.jpg" alt="" class="img-res">
-                  <a href="https://nicolasluckie.com/FIS/" id="fis" class="rectangle" target="_blank">
-                    <i class="fa fa-plus"></i>
-                  </a>
-                </div><!-- /.portfolio-item-thumb  -->
-                <div class="portfolio-info">
-                  <a href="https://nicolasluckie.com/FIS/" target="_blank" id="fis2"><h3>Funeral Information System</h3></a>
-                  <p>A mobile-first CMS solution designed for a funeral home.</p>
-                </div><!-- /.portfolio-info  -->
-              </div>
-            </div><!-- /.col-md-3  -->
-
-          </div><!-- /#grid -->
-
-        </div>
-        <!-- /.portfolio -->
-
-      </div>
-    </section><!-- /.section-works -->
-    <!-- End Works section -->
-
     <!-- GitHub section -->
     <section class="section-background section-twitter background-overlay text-center" id="contact">
       <div class="container">
-        <!--<div class="rectangle">
-          <i class="fa fa-envelope"></i>
-        </div>-->
         <div class="text-center section-diff-title">
           <h2 style="color: white; z-index: 1000;">CONTACT</h2>
-          <!--<p>This my Education and Experience</p>-->
         </div>
         <div class="text-center" style="
               margin-left: auto;
@@ -415,35 +339,10 @@
           <a href="vcard/nicolasluckie" id="contactqr"><img style="border-radius: 10px; width: 200px"
               src="assets/img/qr-code.svg" /></a>
         </div>
-        <!--<a href="mailto:nicolasluckie@gmail.com" class="btn btn-inverted" id="email">EMAIL</a>-->
       </div>
     </section>
     <!-- /.section-twitter-->
     <!-- End Twitter section -->
-
-    <!-- Clients section -->
-    <section class="section-clients">
-      <div class="container">
-        <div class="text-center section-diff-title">
-          <h2>CLIENTS</h2>
-          <p></p>
-        </div>
-        <div class="row text-center">
-          <!-- RBC -->
-          <a target="_blank" href="https://www.rbc.com/about-rbc.html" class="client" id="btnRbc">
-            <img src="assets/img/client-3.png" class="img-responsive" alt="" /> </a><!-- /.client -->
-          <!-- MacKinnon and Bowes -->
-          <a class="client" id="btnMackBowes" style="filter: grayscale(100%);-webkit-filter: grayscale(100%);">
-            <img src="assets/img/client-1.png" class="img-responsive" alt="" /> </a><!-- /.client -->
-          <!-- Eurofase -->
-          <a target="_blank" href="https://www.eurofase.com/" class="client" id="btnEurofase">
-            <img src="assets/img/client-2.png" class="img-responsive" alt="" /> </a><!-- /.client -->
-        </div>
-        <!-- /.clients-carousel -->
-      </div>
-    </section>
-    <!-- /.section-clients -->
-    <!-- End Clients section -->
 
     <!-- Social Networks section -->
     <section class="section-networks blue-bg">
@@ -471,10 +370,6 @@
       <ul class="list-unstyled list-inline">
         <li class="page-scroll">
           <a href="#main" id="about2">About</a>
-        </li>
-        <!--<li class="page-scroll"><a href="#intro">Intro</a></li>-->
-        <li class="page-scroll">
-          <a href="#about" id="skills2">Skills</a>
         </li>
         <!--<li class="page-scroll"><a href="#team">Team</a></li>-->
         <li class="page-scroll">
@@ -549,9 +444,6 @@
       $("#about1").click(function () {
         umami.track("About (top) clicked");
       });
-      $("#skills1").click(function () {
-        umami.track("Skills (top) clicked");
-      });
       $("#projects1").click(function () {
         umami.track("Projects (top) clicked");
       });
@@ -606,9 +498,6 @@
       // Bottom navbar
       $("#about2").click(function () {
         umami.track("About (bottom) clicked");
-      });
-      $("#skills2").click(function () {
-        umami.track("Skills (bottom) clicked");
       });
       $("#projects2").click(function () {
         umami.track("Projects (bottom) clicked");
