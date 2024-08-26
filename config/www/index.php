@@ -73,7 +73,7 @@
     <!-- /.hero-content -->
 
     <div class="hero-arrow page-scroll home-arrow-down">
-      <a class="" href="#quote"><i class="fa fa-angle-double-down" aria-hidden="true"></i></a>
+      <a class="" href="#works"><i class="fa fa-angle-double-down" aria-hidden="true"></i></a>
     </div>
     <!-- /.hero-arrow -->
   </div>
@@ -130,26 +130,9 @@
 
   <!-- Main content -->
   <main id="main" class="site-main">
-    <!-- Quote section -->
-    <section class="site-section section-background section-quote background-overlay text-center" id="quote">
-      <p class="section-subtitle" style="margin-bottom: 15px;">
-        <span style="color: #666;">ABOUT</span>
-      </p>
-      <div class="container"
-        style="background-color: rgba(0, 0, 0, 0.5);border-radius: 15px;padding: 10px;box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.75);-webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.75);-moz-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.75);">
-        <p>
-          Background in <span>software/full stack development</span>. Enjoys <span
-            style="color: #128df9">designing</span>, <span style="color: #128df9">improving</span>, and <span
-            style="color: #128df9">automating</span> processes. Passionate about <span>cyber security</span> and
-          <span>digital forensics</span>.
-        </p>
-      </div>
-    </section>
-    <!-- /.section-quote -->
-    <!-- End Quote section -->
 
     <!-- Portfolio/Works section -->
-    <section class="site-section section-works" id="works">
+    <section class="site-section section-works" id="works" style="background-color: #f6f6f6;">
       <div class="container">
         <h2>PROJECTS</h2>
         <!-- <p class="section-subtitle"><span>Subtitle</span></p> -->
@@ -167,24 +150,6 @@
 
           <!-- grid | 4-columns="col-md-3 col-sm-4 col-xs-6" 2-columns="col-md-6 col-sm-8 col-xs-12 -->
           <div id="grid" class="shuffle">
-
-            <!-- Portfolio item" -->
-            <div class="col-md-6 col-sm-8 col-xs-12 shuffle-item filtered" data-groups="[&quot;desktopapps&quot;]">
-              <div class="portfolio-item">
-                <div class="portfolio-item-thumb">
-                  <img src="assets/img/portfolio-1.jpg" alt="" class="img-res">
-                  <a href="https://github.com/nicolasluckie/streamdeck-gpu" id="gpu" class="rectangle" target="_blank">
-                    <i class="fa fa-plus"></i>
-                  </a>
-                </div><!-- /.portfolio-item-thumb  -->
-                <div class="portfolio-info">
-                  <a href="https://github.com/nicolasluckie/streamdeck-gpu" target="_blank" id="gpu2">
-                    <h3>streamdeck-gpu</h3>
-                  </a>
-                  <p>A Stream Deck plugin that displays the current GPU temperature.</p>
-                </div><!-- /.portfolio-info  -->
-              </div>
-            </div><!-- /.col-md-3  -->
 
             <!-- Portfolio item -->
             <div class="col-md-6 col-sm-8 col-xs-12 shuffle-item filtered" data-groups="[&quot;webdev&quot;]">
@@ -204,6 +169,24 @@
               </div>
             </div><!-- /.col-md-3  -->
 
+            <!-- Portfolio item" -->
+            <div class="col-md-6 col-sm-8 col-xs-12 shuffle-item filtered" data-groups="[&quot;desktopapps&quot;]">
+              <div class="portfolio-item">
+                <div class="portfolio-item-thumb">
+                  <img src="assets/img/portfolio-1.jpg" alt="" class="img-res">
+                  <a href="https://github.com/nicolasluckie/streamdeck-gpu" id="gpu" class="rectangle" target="_blank">
+                    <i class="fa fa-plus"></i>
+                  </a>
+                </div><!-- /.portfolio-item-thumb  -->
+                <div class="portfolio-info">
+                  <a href="https://github.com/nicolasluckie/streamdeck-gpu" target="_blank" id="gpu2">
+                    <h3>streamdeck-gpu</h3>
+                  </a>
+                  <p>A Stream Deck plugin that displays the current GPU temperature.</p>
+                </div><!-- /.portfolio-info  -->
+              </div>
+            </div><!-- /.col-md-3  -->
+
           </div><!-- /#grid -->
 
         </div>
@@ -212,6 +195,28 @@
       </div>
     </section><!-- /.section-works -->
     <!-- End Works section -->
+
+
+    <!-- Quote section -->
+    <section class="site-section section-background section-quote background-overlay text-center" id="quote">
+      <p class="section-subtitle" style="margin-bottom: 15px;">
+        <span style="color: #fff;">ABOUT</span>
+      </p>
+      <div class="container"
+        style="background-color: rgba(0, 0, 0, 0.5);border-radius: 15px;padding: 10px;box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.75);-webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.75);-moz-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.75);">
+        <p>
+          Software Engineer with a combined 10 years of experience in web and software development.
+          <br><br>Background in designing, implementing, and maintaining software solutions using both agile and
+          waterfall methodologies.
+          <br><br>Leverages skills in programming, software architecture, and automation to support and enhance
+          large-scale technology
+          projects throughout the software development life cycle.
+        </p>
+      </div>
+    </section>
+    <!-- /.section-quote -->
+    <!-- End Quote section -->
+
 
     <!-- History section -->
     <section class="section-history" id="history">
@@ -224,7 +229,7 @@
         <ul class="timeline">
           <!-- Timeline badge -->
           <li class="timeline-start">
-            <div class="rectangle"><span><i class="fa fa-circle"></i></span></div>
+            <div class="rectangle"></div>
           </li>
           <!-- /.timeline-start -->
 
@@ -233,9 +238,9 @@
             <div class="rectangle timeline-rectangle"></div>
             <div class="timeline-panel">
               <div class="timeline-heading">
-                <div class="timeline-date">
+                <!-- <div class="timeline-date">
                   <p>2022</p>
-                </div>
+                </div> -->
                 <!-- /.timeline-date -->
                 <div class="timeline-position">
                   <p style="text-transform: unset;">Humber College</p>
@@ -265,9 +270,9 @@
                   <p style="text-transform: unset;">Durham College</p>
                 </div>
                 <!-- /.timeline-position -->
-                <div class="timeline-date">
+                <!-- <div class="timeline-date">
                   <p>2020</p>
-                </div>
+                </div> -->
                 <!-- /.timeline-date -->
               </div>
               <!-- /.timeline-heading -->
@@ -289,9 +294,9 @@
             <div class="rectangle timeline-rectangle"></div>
             <div class="timeline-panel">
               <div class="timeline-heading">
-                <div class="timeline-date">
+                <!-- <div class="timeline-date">
                   <p>2017</p>
-                </div>
+                </div> -->
                 <!-- /.timeline-date -->
                 <div class="timeline-position">
                   <p style="text-transform: unset;">Sheridan College</p>
@@ -314,7 +319,7 @@
 
           <!-- Timeline Badge  -->
           <li class="timeline-end">
-            <div class="rectangle"><span><i class="fa fa-stop-circle-o"></i></span></div>
+            <div class="rectangle"></div>
           </li>
           <!-- /.timeline-end -->
         </ul>
