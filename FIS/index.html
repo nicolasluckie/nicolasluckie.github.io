@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funeral Service Information System | Nic Luckie</title>
+    <meta name="description" content="A mobile-first LAMP-stack CMS built for a funeral home, streamlining overnight dispatch, cemetery records, and institutional access.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://nicolasluckie.com/FIS/">
+    <link rel="icon" href="assets/favicon.png">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Funeral Service Information System | Nic Luckie">
+    <meta property="og:description" content="A mobile-first LAMP-stack CMS built for a funeral home, streamlining overnight dispatch, cemetery records, and institutional access.">
+    <meta property="og:image" content="assets/og-image.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&family=Exo+2:wght@700;900&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+    <script defer src="https://analytics.nicolasluckie.com/script.js" data-website-id="0c0795bd-4750-45b6-bcec-ffd99748bb85"></script>
+    <style>
+        :root {
+            --color-black: #01020A;
+            --color-near-black: #0A0B12;
+            --color-bg: #101119;
+            --color-bg-light: #1A1B24;
+            --color-text: #EAEBF0;
+            --color-text-muted: #8892B0;
+            --color-accent-green: #00FF80;
+            --color-accent-cyan: #00FFFF;
+            --color-accent-red: #FF3B5F;
+            --color-accent-gold: #FFD700;
+            --font-primary: 'Roboto Mono', monospace;
+            --font-display: 'Exo 2', sans-serif;
+        }
+        body {
+            background-color: var(--color-black);
+            color: var(--color-text);
+            font-family: var(--font-primary);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        .font-display { font-family: var(--font-display); }
+        h1, h2, h3 {
+            font-family: var(--font-display);
+            line-height: 1.2;
+            letter-spacing: -0.02em;
+        }
+        h1 { font-size: clamp(2rem, 5vw, 3.5rem); }
+        h2 { font-size: clamp(1.5rem, 4vw, 2.25rem); }
+        .bg-near-black { background-color: var(--color-near-black); }
+        .bg-bg { background-color: var(--color-bg); }
+        .bg-bg-light { background-color: var(--color-bg-light); }
+        .text-muted { color: var(--color-text-muted); }
+        .text-accent-green { color: var(--color-accent-green); }
+        .text-accent-cyan { color: var(--color-accent-cyan); }
+        .text-accent-gold { color: var(--color-accent-gold); }
+        .border-accent-green { border-color: var(--color-accent-green); }
+        .border-accent-cyan { border-color: var(--color-accent-cyan); }
+        .border-accent-gold { border-color: var(--color-accent-gold); }
+        html { scroll-behavior: smooth; }
+        a:focus-visible, button:focus-visible {
+            outline: 2px solid var(--color-accent-green);
+            outline-offset: 2px;
+        }
+        .feature-card {
+            border-left: 2px solid var(--color-accent-gold);
+            padding-left: 1rem;
+            transition: all 0.2s ease;
+        }
+        .feature-card:hover { border-left-color: var(--color-accent-green); }
+        .screenshot-thumb {
+            border: 1px solid rgba(0, 255, 128, 0.2);
+            transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+            cursor: zoom-in;
+        }
+        .screenshot-thumb:hover {
+            border-color: var(--color-accent-green);
+            transform: translateY(-4px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+        }
+        #lightbox {
+            position: fixed;
+            inset: 0;
+            background: rgba(1, 2, 10, 0.92);
+            backdrop-filter: blur(4px);
+            display: none;
+            align-items: center;
+            justify-content: center;
+            z-index: 100;
+            padding: 2rem;
+        }
+        #lightbox.open { display: flex; }
+        #lightbox img { max-height: 90vh; max-width: 90vw; border: 1px solid var(--color-accent-green); border-radius: 0.5rem; }
+        #lightbox-close {
+            position: absolute;
+            top: 1.5rem;
+            right: 1.5rem;
+            color: var(--color-text);
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+        #lightbox-close:hover { color: var(--color-accent-red); }
+    </style>
+</head>
+<body class="bg-near-black text-main">
+    <nav class="bg-black/90 backdrop-blur-md sticky top-0 z-40 border-b border-accent-green/10">
+        <div class="container mx-auto px-4">
+            <div class="flex items-center justify-between h-16">
+                <a href="https://nicolasluckie.com/" class="font-display text-lg md:text-xl font-bold text-accent-green">Nic Luckie</a>
+                <a href="https://nicolasluckie.com/#dispatch" class="text-sm md:text-base text-muted hover:text-accent-green transition-colors">&larr; Back to Projects</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="py-16 md:py-24 px-4 border-b border-accent-gold/20">
+        <div class="container mx-auto max-w-4xl flex flex-col md:flex-row items-center gap-8">
+            <img src="assets/logo.png" alt="Funeral Service Information System logo" class="w-24 h-24 md:w-32 md:h-32 rounded-lg border border-accent-cyan/30 flex-shrink-0">
+            <div class="text-center md:text-left">
+                <h1 class="font-bold text-white mb-3">Funeral Service Information System</h1>
+                <p class="text-muted text-lg md:text-xl">A mobile-first, <strong class="text-accent-cyan">LAMP-stack CMS</strong> built for a funeral home, streamlining overnight dispatch and institutional access.</p>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="py-20 px-4 bg-bg">
+            <div class="container mx-auto max-w-4xl">
+                <h2 class="font-bold text-white mb-4 text-center">Overview</h2>
+                <div class="text-left text-base md:text-lg space-y-6 max-w-3xl mx-auto border-t border-b border-accent-gold/20 py-10 px-4 md:px-8">
+                    <p>I designed and built this system while working as a funeral director's assistant, giving advisors, dispatchers, and partner institutions a single, mobile-friendly platform for managing daily operations.</p>
+                    <p>It replaced paper-based dispatch logs and ad-hoc communication with a secure, location-aware tool purpose-built for overnight transfer and removal logistics.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-20 px-4 bg-near-black">
+            <div class="container mx-auto max-w-6xl">
+                <h2 class="font-bold text-white mb-10 text-center">Screenshots</h2>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4" id="screenshot-grid">
+                    <img src="assets/screenshots/1.png" alt="Screenshot 1" class="screenshot-thumb rounded-lg w-full h-40 md:h-48 object-cover">
+                    <img src="assets/screenshots/2.png" alt="Screenshot 2" class="screenshot-thumb rounded-lg w-full h-40 md:h-48 object-cover">
+                    <img src="assets/screenshots/3.png" alt="Screenshot 3" class="screenshot-thumb rounded-lg w-full h-40 md:h-48 object-cover">
+                    <img src="assets/screenshots/4.png" alt="Screenshot 4" class="screenshot-thumb rounded-lg w-full h-40 md:h-48 object-cover">
+                </div>
+            </div>
+        </section>
+
+        <section class="py-20 px-4 bg-bg">
+            <div class="container mx-auto max-w-5xl">
+                <h2 class="font-bold text-white mb-10 text-center">Features</h2>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="feature-card">
+                        <h3 class="font-bold text-white mb-1 text-lg">User Accounts &amp; Management</h3>
+                        <p class="text-muted">Secure log-in and role-based account management for staff and partner institutions.</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3 class="font-bold text-white mb-1 text-lg">Institutional Profiles</h3>
+                        <p class="text-muted">Custom profiles for funeral homes, hospitals, nursing homes, and other institutions.</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3 class="font-bold text-white mb-1 text-lg">Cemetery Maps</h3>
+                        <p class="text-muted">Interactive maps for locating plots and navigating cemetery grounds.</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3 class="font-bold text-white mb-1 text-lg">On-Call Calculator</h3>
+                        <p class="text-muted">Automated scheduling tool for tracking and calculating on-call rotations.</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3 class="font-bold text-white mb-1 text-lg">Mobile Photo Upload</h3>
+                        <p class="text-muted">Field-ready photo capture and upload directly from mobile devices.</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3 class="font-bold text-white mb-1 text-lg">Gas Cards &amp; Fleet Tracking</h3>
+                        <p class="text-muted">Tracking for fleet gas cards alongside vehicle usage records.</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3 class="font-bold text-white mb-1 text-lg">Toronto Police Divisional Map</h3>
+                        <p class="text-muted">Reference map of Toronto police divisions to support dispatch logistics.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="lightbox">
+        <span id="lightbox-close">&times;</span>
+        <img id="lightbox-img" src="" alt="Expanded screenshot">
+    </div>
+
+    <footer class="bg-black text-center py-16 px-4 border-t border-gray-800">
+        <div class="container mx-auto">
+            <a href="https://nicolasluckie.com/" class="text-accent-green hover:underline font-mono">&larr; nicolasluckie.com</a>
+            <p class="text-muted text-sm mt-6">&copy; <span id="copyright-year"></span> Nic Luckie. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('copyright-year').textContent = new Date().getFullYear();
+
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImg = document.getElementById('lightbox-img');
+        document.getElementById('screenshot-grid').addEventListener('click', (e) => {
+            if (e.target.tagName === 'IMG') {
+                lightboxImg.src = e.target.src;
+                lightbox.classList.add('open');
+            }
+        });
+        function closeLightbox() { lightbox.classList.remove('open'); lightboxImg.src = ''; }
+        document.getElementById('lightbox-close').addEventListener('click', closeLightbox);
+        lightbox.addEventListener('click', (e) => { if (e.target === lightbox) closeLightbox(); });
+        document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeLightbox(); });
+    </script>
+</body>
+</html>
